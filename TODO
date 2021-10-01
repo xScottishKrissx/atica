@@ -2,17 +2,44 @@
 Atica:
   Goals:
     ☐ Practice animate on scroll effects
-    ☐ Further practice with React + Gatsby + GraphiQL
+    ☐ Further practice with Gatsby + GraphiQL
+      ☐ Goal, use plugins wherever possible
+        // no more <img> , use <Gatsby Image> plugin
+        // remember how to install plugins
+
     ☐ Practice with react-bootstrap
-      ☐ Goal, only use react-bootstrap elements
+      ☐ Goal, only use react-bootstrap elements for things like buttons, navbar etc
+        // custom styles are allowed, but <button> tags are not.
+
     ☐ Practice with Sass
+
+    Update:
+      ☐ Ok, all of the above sounds great but I think im trying too much and getting a bit overwhelmed so new plan:
+        ☐ Get the design in place, with all of the trimmings
+        ☐ ...then attempt the scroll into view animations with everything in place.
+        ☐ Keep pushing ahead with sass, it will be better in the long run even if there's some teething issues
+        ☐ Pull back on the bootstrap. It'l be good for general layout but the components annoy me
+        ☐ Continue ahead with plugins.
+
+
+      ☐ Project Ideas
+        ☐ Furniture Store...with a giant butterfly at the top of the page for some reason...
+        ☐ ...this will work
 
 
   To-Do:
     Setup:
       ✔ Create new gatsby project @done(12:57 - 01/10/21)
       ✔ Install react-bootstrap @done(12:57 - 01/10/21)
-      ☐ create new workspace
-      ☐ create github repo
-      ☐ deploy to gatsby hosting
+      ✔ create new workspace @done(12:58 - 01/10/21)
+      ✔ create github repo @done(12:58 - 01/10/21)
+      ✔ deploy to gatsby hosting @done(13:28 - 01/10/21)
+
+    Getting Started:
+      ☐ Get structure of page
+        ☐ Navbar
+        ☐ Header
+          ☐ This is where the first "on scroll" will appear. It's not actually on scroll but the technique of playing an animation when something comes into view, is the same.(i think)
+        ☐ Body
+        ☐ Footer
 

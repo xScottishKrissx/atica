@@ -1,0 +1,61 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: black
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  background-color: #f4f4f4
+
+*
+    // outline:1px solid black
+
+#gatsby-focus-wrapper
+  background-color: #f4f4f4
+// Navbar
+.container
+  background-color: #f4f4f4
+.navbarWrapper
+  background-color: #f4f4f4
+  position: fixed
+  top: 0
+  // width: 100%
+.row
+  justify-content: center
+  // min-height: 200px
+
+.row 
+    div
+      // border:1px solid black
+      border-radius: 30px
+
+.header
+  display: flex
+  justify-content: center
+  min-height: 100vh
+
+  .row
+    align-items: center
+    justify-content: center
+    .col
+      display: flex
+      justify-content: center
+      align-items: center
+
+      img
+        animation: fly 3s
+        animation-fill-mode: forwards
+        max-width: 1200px
+        width: 100%
+
+      @keyframes fly
+        0%
+          transform: translateY(60px)
+          opacity: 0
+        100%
+          transform: translateY(0px)
+          opacity: 1
+          
+      div
+        position: absolute
+        h1
+          font-size: 6rem
