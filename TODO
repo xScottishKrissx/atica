@@ -1,0 +1,18 @@
+
+Atica:
+  Goals:
+    ☐ Practice animate on scroll effects
+    ☐ Further practice with React + Gatsby + GraphiQL
+    ☐ Practice with react-bootstrap
+      ☐ Goal, only use react-bootstrap elements
+    ☐ Practice with Sass
+
+
+  To-Do:
+    Setup:
+      ✔ Create new gatsby project @done(12:57 - 01/10/21)
+      ✔ Install react-bootstrap @done(12:57 - 01/10/21)
+      ☐ create new workspace
+      ☐ create github repo
+      ☐ deploy to gatsby hosting
+
