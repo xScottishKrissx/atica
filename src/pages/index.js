@@ -12,13 +12,34 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import header from '../images/butterfly.png'
+import sofa from '../images/sofa.jpg'
 
 // markup
 const IndexPage = () => {
 
 
 
+function mouseHover(id,action){
+  // console.log(id + " : " + action)
+  if(typeof document !== 'undefined'){
+    if(action === "out")  {
+      setTimeout(function(){ 
+      document.getElementById(id).classList.remove('in')
+      document.getElementById(id).classList.add('out')
+      }, 1000);
+      // document.getElementById(id).classList.remove('in')
+      // document.getElementById(id).classList.add('out')
+    }
+    if(action === "in") {
+      
+      document.getElementById(id).classList.remove('out')
+      document.getElementById(id).classList.add('in')
 
+    }
+  }
+
+ 
+}
   
 
 
@@ -27,11 +48,11 @@ const IndexPage = () => {
   return (
 
 <>
-    <Container fluid className="navbarWrapper">
+    {/* <Container fluid className="navbarWrapper">
       <Row>
         <Col>NavBar</Col>
       </Row>
-    </Container>
+    </Container> */}
 
 
     <Container fluid className="header">
@@ -40,9 +61,11 @@ const IndexPage = () => {
           <img src={header}></img>
           
           <div>
-            <h1>Artsy Furniture</h1>
+            <h1>ATICA</h1>
+            <p>Something profound and over the top copy about furniture, specifically about furniture from us</p>
+            <button>Call to action</button>
           </div>
-          
+
         </Col>
       </Row>
     </Container>
@@ -56,84 +79,250 @@ const IndexPage = () => {
 
 
 {/* Text 1 */}
-        <Row >
-          <Col md="12" >Text</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>Thinking about the world</span>
+            <h2>Product Examples</h2>
+            <p>Sofa - Tables - Chairs - Ottomans </p>
+          </Col>
         </Row>
+
 {/* Card Section 1 */}
-        <Row>
-          <Col md="12">Card 1 - Full</Col>
+        <Row className="card" >
+          <Col md="12" >
+            {/* <img src={sofa} alt="" /> */}
+            <span id="card-1"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+
+          </Col>
         </Row>
 
-        <Row md="8">
-          <Col xs={6}>Card 1  - Half</Col>
-          <Col xs={6}>Card 1 - Half</Col>
+        <Row md="8" className="card dual">
+          <Col md={6}>
+            <span id="card-2"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={6}>            
+            <span id="card-3"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div></Col>
+
         </Row>
 
-        <Row>
-          <Col>Card 1 - Full</Col>
+        <Row className="card">
+            <Col md="12" >
+            {/* <img src={sofa} alt="" /> */}
+            <span id="card-4"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+
+          </Col>
         </Row>
 
 {/* Text Section 2 */}
-        <Row >
-          <Col md="12" >Text</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>text area 2</span>
+            <h2>Material Examples</h2>
+            <p>Wood - Brown Wood - Yellow Wood - Black Wood  </p>
+          </Col>
         </Row>
+
 {/* Card Section 2 */}    
-        <Row>
-          <Col md="12">Card 2 - Full</Col>
+<Row className="card" >
+          <Col md="12" >
+            {/* <img src={sofa} alt="" /> */}
+            <span id="card-5"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+
+          </Col>
         </Row>
 
-        <Row md="12">
-          <Col xs={6}>Card 2 - Half</Col>
-          <Col xs={6}>Card 2 - Half</Col>
+        <Row md="8" className="card dual">
+          <Col md={6}>
+            <span id="card-6"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={6}>            
+            <span id="card-7"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div></Col>
+
         </Row>
 
-        <Row>
-          <Col md="12">Card 2 - Full</Col>
+        <Row className="card">
+            <Col md="12" >
+            {/* <img src={sofa} alt="" /> */}
+            <span id="card-8"></span>
+            <div>
+              <h3>Card Title 8</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+
+          </Col>
         </Row>
 {/* Text Section 3 */}
-        <Row >
-          <Col md="12" >Text</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>text area 3</span>
+            <h2>Location Examples</h2>
+            <p>Glasgow - Ayr - Fort William </p>
+          </Col>
         </Row>
 
 {/* Card Section 3 */}
-        <Row md="12">
-          <Col xs={6}>Card 2 - Half</Col>
-          <Col xs={6}>Card 2 - Half</Col>
+        <Row md="8" className="card dual">
+          <Col md={6}>
+            <span id="card-9"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={6}>            
+            <span id="card-10"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div></Col>
+
         </Row>
 
-        <Row>
-          <Col md="12">Card 2 - Full</Col>
+        <Row className="card">
+            <Col md="12" >
+            {/* <img src={sofa} alt="" /> */}
+            <span id="card-11"></span>
+            <div>
+              <h3>Card Title 8</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+
+          </Col>
         </Row>
 
 {/* Text Section 4 */}
-        <Row >
-          <Col md="12" >Text</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>text area 4</span>
+            <h2>Atica Guarantee</h2>
+            <p>Vegan - Renewable</p>
+          </Col>
         </Row>
 
 {/* Card Section 4 */}
-        <Row md="12">
-          <Col xs={6}>Card 2 - Half</Col>
-          <Col xs={6}>Card 2 - Half</Col>
+        <Row md="8" className="card dual">
+          <Col md={6}>
+            <span id="card-12"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={6}>            
+            <span id="card-13"></span>
+
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
         </Row>
 
 {/* Text Section 5 */}
-        <Row >
-          <Col md="12" >Text</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>text area 5</span>
+            <h2>Meet the team</h2>
+            
+            <button>Call To Action</button>
+          </Col>
         </Row>
 
 {/* Footer */}
 
 
 {/* Footer Cards */}
-        <Row md="12">
-          <Col xs={3}>Card 2 - Half</Col>
-          <Col xs={3}>Card 2 - Half</Col>
-          <Col xs={3}>Card 2 - Half</Col>
-          <Col xs={3}>Card 2 - Half</Col>
+        <Row md="8" className="card dual">
+          <Col md={3}>
+            <span id="card-14"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={3}>            
+            <span id="card-15"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={3}>            
+            <span id="card-16"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
+          <Col md={3}>            
+            <span id="card-17"></span>
+            <div>
+              <h3>Card Title</h3>
+              <p>Some copy that goes onto the card</p>
+              <button>Link to page</button>
+            </div>
+          </Col>
+
         </Row>
 
-        <Row >
-          <Col md="12" >Footer</Col>
+        <Row className="textArea" >
+          <Col md="12" >
+            <span>Footer Text</span>
+            <h2>Furniture Subscription</h2>
+            <button>Call To Action</button>
+          </Col>
         </Row>
 
 

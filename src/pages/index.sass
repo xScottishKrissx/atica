@@ -1,5 +1,23 @@
+@import "custom"
+
+// Notes
+  // lg - >992px
+
+
+
+
+
+
+
+
+  
 $font-stack: Helvetica, sans-serif
 $primary-color: black
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+  padding-top: 50px
+  padding-bottom: 50px
+
 
 body
   font: 100% $font-stack
@@ -26,10 +44,11 @@ body
 .row 
     div
       // border:1px solid black
-      border-radius: 30px
+      // border-radius: 30px
 
 .header
   display: flex
+  flex-direction: column
   justify-content: center
   min-height: 100vh
 
@@ -42,9 +61,11 @@ body
       align-items: center
 
       img
+        //Disabling animation for development
         animation: fly 3s
         animation-fill-mode: forwards
         max-width: 1200px
+        opacity: 0.5
         width: 100%
 
       @keyframes fly
@@ -53,9 +74,158 @@ body
           opacity: 0
         100%
           transform: translateY(0px)
-          opacity: 1
+          opacity: 0.5
           
       div
         position: absolute
         h1
           font-size: 6rem
+
+.textArea
+  margin-bottom: 20px
+  margin-top: 20px !important
+  div
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+    span
+      color: grey
+      font-size:20px 
+    h2
+      font-size: 50px
+    p
+      font-size: 20px
+
+.row
+  margin-right: 0 !important
+  // margin-top: 20px !important
+  margin-bottom: 20px
+
+.card
+  :hover > div >  span
+    transform: scale(1.1)
+  
+  div
+    margin-bottom: 20px
+    margin-top:20px
+    margin-right: 0
+    max-height: 400px
+    overflow: hidden
+    position: relative
+    // padding: 0 !important
+    // padding-left: 0
+    // padding-right: 0
+    // transition: ease-in 1s
+
+    &:hover 
+      div
+        // background-color: red
+        
+
+
+        
+
+
+
+    img
+      width: 100%
+    span
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      // border-radius: inherit
+      height: 100%
+      position: absolute
+      width: 100%
+      // animation: scaleCardImageIn 1s
+      // animation-fill-mode: both
+
+
+    div
+      // border-radius: inherit
+      opacity: 0
+      padding-top: 30px
+      padding-left: 30px
+      padding-bottom: 75%
+      position: relative
+      transition: ease-in-out 1s
+      &:hover
+        opacity: 1
+
+
+// Until i get data sorted
+#card-1
+  background-image: url('../images/sofa.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-2
+  background-image: url('../images/chair.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-3
+  background-image: url('../images/table.jpeg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-4
+  background-image: url('../images/ottoman.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-5
+  background-image: url('../images/pine.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-6
+  background-image: url('../images/plastic.jpeg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-7
+  background-image: url('../images/hemp.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-8
+  background-image: url('../images/grown.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-9
+  background-image: url('../images/edinburgh.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-10
+  background-image: url('../images/ayr.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-11
+  background-image: url('../images/glasgow.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: inherit
+
+#card-12
+  background-image: url('../images/vegan.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+#card-13
+  background-image: url('../images/renewable.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+
+@media (min-width: 700px)
+  .dual
+    flex-direction: row !important
+    div
+      // padding: 20px
+

@@ -37,9 +37,24 @@ Atica:
 
     Getting Started:
       ☐ Get structure of page
+      
         ☐ Navbar
         ☐ Header
           ☐ This is where the first "on scroll" will appear. It's not actually on scroll but the technique of playing an animation when something comes into view, is the same.(i think)
         ☐ Body
         ☐ Footer
 
+
+
+Navbar:
+
+Header:
+  ✔ Add image @done(12:00 - 04/10/21)
+  ☐ Add text
+    ☐ Style text
+  
+Body:
+  Card Animation:
+    ☐ This is tougher than I thought it would be. Getting the scale is easy enough, getting the smooth in and out animation of the scale is a different thing and requires javascript.
+      ☐ ok im getting bogged down here. I dont have a satisfactory solution for this and im spending too much time figuring it out.
+        ✔ get the look of the design in place before working on the details. @done(18:06 - 04/10/21)
