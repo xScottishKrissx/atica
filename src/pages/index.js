@@ -321,7 +321,7 @@ if(typeof document !== 'undefined'){
 
 
 {/* Footer Cards */}
-        <Row md="8" className="card dual">
+        <Row md="8" className="card dual up">
           <Col md={3}>
             <span id="card-14"></span>
             <div>
@@ -360,7 +360,7 @@ if(typeof document !== 'undefined'){
 
         </Row>
 
-        <Row className="textArea" >
+        <Row className="textArea up" >
           <Col md="12" >
             <span>Footer Text</span>
             <h2>Furniture Subscription</h2>

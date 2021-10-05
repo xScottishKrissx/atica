@@ -35,17 +35,9 @@ Atica:
       ✔ create github repo @done(12:58 - 01/10/21)
       ✔ deploy to gatsby hosting @done(13:28 - 01/10/21)
 
-    Getting Started:
-      ☐ Get structure of page
-      
-        ☐ Navbar
-        ☐ Header
-          ☐ This is where the first "on scroll" will appear. It's not actually on scroll but the technique of playing an animation when something comes into view, is the same.(i think)
-        ☐ Body
-        ☐ Footer
 
-
-
+General:
+  ☐ Resize images, they're hilariously too big. The butterfly is 14MB.
 Navbar:
 
 Header:
