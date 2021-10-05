@@ -42,8 +42,38 @@ function mouseHover(id,action){
 }
   
 
+if(typeof document !== 'undefined'){
 
- 
+
+
+function intersectionCallback(entries) {
+  let isIntersecting = IntersectionObserverEntry.isIntersecting;
+  entries.forEach(function(entry) {
+    if (entry.intersectionRatio > 0) {
+      console.log("Is intersecting")
+      entry.target.classList.add('testClass')
+    } else {
+      console.log("Is Not intersecting")
+      entry.target.classList.remove('testClass')
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5]
+}
+
+let observer = new IntersectionObserver(intersectionCallback, options)
+
+let elements = document.querySelectorAll('h2')
+
+for (let elm of elements){
+  observer.observe(elm)
+}
+
+}
+
+
 
   return (
 
@@ -54,7 +84,7 @@ function mouseHover(id,action){
       </Row>
     </Container> */}
 
-
+    
     <Container fluid className="header">
       <Row className="text">
         <Col>
