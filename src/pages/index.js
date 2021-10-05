@@ -43,7 +43,7 @@ function mouseHover(id,action){
   
 
 if(typeof document !== 'undefined'){
-  window.scrollTo(0,0)
+  // window.scrollTo(0,0)
   let isLeaving = false;
 
   function intersectionCallback(entries) {
@@ -115,10 +115,6 @@ if(typeof document !== 'undefined'){
 
     <Container fluid="sm">
        
-
-
-
-
 
 
 {/* Text 1 */}
@@ -242,7 +238,31 @@ if(typeof document !== 'undefined'){
         </Row>
 
 {/* Card Section 3 */}
-        <Row md="8" className="card dual right">
+<Row className="custom-card">
+      <div className="single-row col-md-6 right" >
+          <div>
+            <span className="testCard" id="card-11"></span>
+          </div>
+      </div>
+
+      <div className="dual-row col-md-6">
+
+          <div className="row higher left">
+              <div className="col-md-12">
+                  <div><span className="testCard" id="card-10"></span></div>
+              </div>
+          </div>
+
+          <div className="row lower left">
+              <div className="col-md-12">
+                  <div><span className="testCard" id="card-9"></span></div>
+              </div>
+          </div>
+
+      </div>
+    </Row>
+
+        {/* <Row md="8" className="card dual right">
           <Col md={6}>
             <span id="card-9"></span>
             <div>
@@ -264,7 +284,6 @@ if(typeof document !== 'undefined'){
 
         <Row className="card right">
             <Col md="12" >
-            {/* <img src={sofa} alt="" /> */}
             <span id="card-11"></span>
             <div>
               <h3>Card Title 8</h3>
@@ -273,7 +292,7 @@ if(typeof document !== 'undefined'){
             </div>
 
           </Col>
-        </Row>
+        </Row> */}
 
 {/* Text Section 4 */}
         <Row className="textArea left" >
