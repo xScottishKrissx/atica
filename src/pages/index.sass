@@ -84,6 +84,7 @@ body
 .textArea
   margin-bottom: 20px
   margin-top: 20px !important
+  z-index: 0
   div
     display: flex
     flex-direction: column
@@ -106,7 +107,7 @@ body
 .card
   :hover > div >  span
     transform: scale(1.1)
-  
+  z-index: 10
   div
     margin-bottom: 20px
     margin-top:20px
@@ -228,14 +229,54 @@ body
     flex-direction: row !important
     div
       // padding: 20px
-
+.row
+  opacity: 0
 .testClass
-  font-size: 100px
+  // font-size: 100px
   animation: in 2s
   animation-fill-mode: forwards
-
+  
 @keyframes in 
   0%
     opacity: 0
+    transform: translate(100px)
   100%
     opacity: 1
+    transform: translate(0)
+  
+
+.aniUp
+  animation: animateUp 2s
+  animation-fill-mode: forwards
+
+@keyframes animateUp 
+  0%
+    opacity: 0
+    transform: translateY(200px)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+.aniLeft
+  animation: animateLeft 2s
+  animation-fill-mode: forwards
+
+@keyframes animateLeft 
+  0%
+    opacity: 0
+    transform: translateX(100px)
+  100%
+    opacity: 1
+    transform: translateX(0)
+  
+.aniRight
+  animation: animateRight 2s
+  animation-fill-mode: forwards
+
+@keyframes animateRight 
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+  100%
+    opacity: 1
+    transform: translateX(0)

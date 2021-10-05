@@ -43,33 +43,46 @@ function mouseHover(id,action){
   
 
 if(typeof document !== 'undefined'){
+  window.scrollTo(0,0)
+  let isLeaving = false;
+
+  function intersectionCallback(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        isLeaving = true;
+        console.log(entry.target.className)
+
+        let targetRow = entry.target.className
+        if(targetRow.includes("left")){
+          entry.target.classList.add('aniLeft')
+        }
+
+        if(targetRow.includes("right")){
+          entry.target.classList.add('aniRight')
+        }
+
+        if(targetRow.includes("up")){
+          entry.target.classList.add('aniUp')
+        }
 
 
 
-function intersectionCallback(entries) {
-  let isIntersecting = IntersectionObserverEntry.isIntersecting;
-  entries.forEach(function(entry) {
-    if (entry.intersectionRatio > 0) {
-      console.log("Is intersecting")
-      entry.target.classList.add('testClass')
-    } else {
-      console.log("Is Not intersecting")
-      entry.target.classList.remove('testClass')
-    }
-  });
-}
+        // entry.target.classList.add('testClass')
+      } else {
+        isLeaving = false;
+      }
+    });
 
-let options = {
-  threshold: [0.5]
-}
+  }
+  
 
-let observer = new IntersectionObserver(intersectionCallback, options)
+  let options = { threshold: [0.1] }
+  let observer = new IntersectionObserver(intersectionCallback, options)
+  let elements = document.querySelectorAll('.row')
 
-let elements = document.querySelectorAll('h2')
-
-for (let elm of elements){
-  observer.observe(elm)
-}
+  for (let elm of elements){
+    observer.observe(elm)
+  }
 
 }
 
@@ -86,7 +99,7 @@ for (let elm of elements){
 
     
     <Container fluid className="header">
-      <Row className="text">
+      <Row className="text up">
         <Col>
           <img src={header}></img>
           
@@ -109,7 +122,7 @@ for (let elm of elements){
 
 
 {/* Text 1 */}
-        <Row className="textArea" >
+        <Row className="textArea right" >
           <Col md="12" >
             <span>Thinking about the world</span>
             <h2>Product Examples</h2>
@@ -118,7 +131,7 @@ for (let elm of elements){
         </Row>
 
 {/* Card Section 1 */}
-        <Row className="card" >
+        <Row className="card right" >
           <Col md="12" >
             {/* <img src={sofa} alt="" /> */}
             <span id="card-1"></span>
@@ -131,7 +144,7 @@ for (let elm of elements){
           </Col>
         </Row>
 
-        <Row md="8" className="card dual">
+        <Row md="8" className="card dual right">
           <Col md={6}>
             <span id="card-2"></span>
             <div>
@@ -151,7 +164,7 @@ for (let elm of elements){
 
         </Row>
 
-        <Row className="card">
+        <Row className="card right">
             <Col md="12" >
             {/* <img src={sofa} alt="" /> */}
             <span id="card-4"></span>
@@ -165,7 +178,7 @@ for (let elm of elements){
         </Row>
 
 {/* Text Section 2 */}
-        <Row className="textArea" >
+        <Row className="textArea left" >
           <Col md="12" >
             <span>text area 2</span>
             <h2>Material Examples</h2>
@@ -174,7 +187,7 @@ for (let elm of elements){
         </Row>
 
 {/* Card Section 2 */}    
-<Row className="card" >
+        <Row className="card left" >
           <Col md="12" >
             {/* <img src={sofa} alt="" /> */}
             <span id="card-5"></span>
@@ -187,7 +200,7 @@ for (let elm of elements){
           </Col>
         </Row>
 
-        <Row md="8" className="card dual">
+        <Row md="8" className="card dual left">
           <Col md={6}>
             <span id="card-6"></span>
             <div>
@@ -207,7 +220,7 @@ for (let elm of elements){
 
         </Row>
 
-        <Row className="card">
+        <Row className="card left">
             <Col md="12" >
             {/* <img src={sofa} alt="" /> */}
             <span id="card-8"></span>
@@ -220,7 +233,7 @@ for (let elm of elements){
           </Col>
         </Row>
 {/* Text Section 3 */}
-        <Row className="textArea" >
+        <Row className="textArea right" >
           <Col md="12" >
             <span>text area 3</span>
             <h2>Location Examples</h2>
@@ -229,7 +242,7 @@ for (let elm of elements){
         </Row>
 
 {/* Card Section 3 */}
-        <Row md="8" className="card dual">
+        <Row md="8" className="card dual right">
           <Col md={6}>
             <span id="card-9"></span>
             <div>
@@ -249,7 +262,7 @@ for (let elm of elements){
 
         </Row>
 
-        <Row className="card">
+        <Row className="card right">
             <Col md="12" >
             {/* <img src={sofa} alt="" /> */}
             <span id="card-11"></span>
@@ -263,7 +276,7 @@ for (let elm of elements){
         </Row>
 
 {/* Text Section 4 */}
-        <Row className="textArea" >
+        <Row className="textArea left" >
           <Col md="12" >
             <span>text area 4</span>
             <h2>Atica Guarantee</h2>
@@ -272,7 +285,7 @@ for (let elm of elements){
         </Row>
 
 {/* Card Section 4 */}
-        <Row md="8" className="card dual">
+        <Row md="8" className="card dual left" >
           <Col md={6}>
             <span id="card-12"></span>
             <div>
@@ -295,7 +308,7 @@ for (let elm of elements){
         </Row>
 
 {/* Text Section 5 */}
-        <Row className="textArea" >
+        <Row className="textArea up" >
           <Col md="12" >
             <span>text area 5</span>
             <h2>Meet the team</h2>
