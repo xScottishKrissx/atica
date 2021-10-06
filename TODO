@@ -39,11 +39,12 @@ Atica:
 General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
 Navbar:
+  ☐ Integrate the navbar with the intersectionObserver stuff
 
 Header:
   ✔ Add image @done(12:00 - 04/10/21)
-  ☐ Add text
-    ☐ Style text
+  ✔ Add text @done(13:05 - 06/10/21)
+    ✔ Style text @done(13:05 - 06/10/21)
   
 Body:
   Card Animation:

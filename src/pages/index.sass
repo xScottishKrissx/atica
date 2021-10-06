@@ -53,6 +53,7 @@ body
     justify-content: center
     .col
       display: flex
+      flex-direction: column
       justify-content: center
       align-items: center
 
@@ -60,22 +61,34 @@ body
         //Disabling animation for development
         animation: fly 3s
         animation-fill-mode: forwards
-        max-width: 1200px
+        max-width: 300px
         // opacity: 0.5
         width: 100%
 
       @keyframes fly
         0%
           transform: translateY(60px)
-          // opacity: 0
+          opacity: 0
         100%
           transform: translateY(0px)
-          // opacity: 0.5
+          opacity: 1
           
       div
-        position: absolute
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        
+
+
         h1
           font-size: 6rem
+@media (min-width: 768px)
+  .header
+    .row
+      .col
+        flex-direction: row
+
 
 .textArea
   margin-bottom: 20px

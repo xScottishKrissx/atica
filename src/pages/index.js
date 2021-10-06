@@ -106,7 +106,7 @@ if(typeof document !== 'undefined'){
           <div>
             <h1>ATICA</h1>
             <p>Something profound and over the top copy about furniture, specifically about furniture from us</p>
-            <button>Call to action</button>
+            {/* <button>Call to action</button> */}
           </div>
 
         </Col>
