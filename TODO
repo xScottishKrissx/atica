@@ -1,7 +1,7 @@
 
 Atica:
   Goals:
-    ☐ Practice animate on scroll effects
+    ✔ Practice animate on scroll effects @done(12:14 - 06/10/21)
     ☐ Further practice with Gatsby + GraphiQL
       ☐ Goal, use plugins wherever possible
         // no more <img> , use <Gatsby Image> plugin
@@ -15,8 +15,8 @@ Atica:
 
     Update:
       ☐ Ok, all of the above sounds great but I think im trying too much and getting a bit overwhelmed so new plan:
-        ☐ Get the design in place, with all of the trimmings
-        ☐ ...then attempt the scroll into view animations with everything in place.
+        ✔ Get the design in place, with all of the trimmings @done(12:14 - 06/10/21)
+        ✔ ...then attempt the scroll into view animations with everything in place. @done(12:14 - 06/10/21)
         ☐ Keep pushing ahead with sass, it will be better in the long run even if there's some teething issues
         ☐ Pull back on the bootstrap. It'l be good for general layout but the components annoy me
         ☐ Continue ahead with plugins.
@@ -57,3 +57,10 @@ Body:
             ✔ ok it wasn't hard at all, i was obviously doing some wrong previously. You just put a class name into the query selector and it works fine @done(12:49 - 05/10/21)
           ✔ I have elements on the page fading into view as you scroll down the page. Cool @done(14:01 - 05/10/21)
           ✔ I have some animations that i am happy with. There's a bit of jumpiness but i'm not sure if that's to do with it being in development mode @done(17:28 - 05/10/21)
+          ☐ the header and body rows need to be differentiated
+            header - start with 1 opacity
+            row - start with 0, then fade in
+              maybe remove all opacity and try again
+          ☐ All of this is being complicated by something going wrong in gatsby/sass. Making a change in my files doesnt always update the page. Adding a space to the end of a class sometimes does so...
+          ☐ ...this is a pain in the neck and making troubleshooting a totally random task. I don't know if what i am doing is wrong or if the page just hasn't been updated.
+          ☐ My only solution is to move on here. I have completed my main goal of understanding animating when scrolling into view so i have at least made some progress even if things are a bit buggy.

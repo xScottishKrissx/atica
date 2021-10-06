@@ -38,20 +38,15 @@ body
   position: fixed
   top: 0
   // width: 100%
-.row
-  justify-content: center
-  // min-height: 200px
 
-.row 
-    div
-      // border:1px solid black
-      // border-radius: 30px
+  // min-height: 200px
 
 .header
   display: flex
   flex-direction: column
   justify-content: center
   min-height: 100vh
+  // opacity: 1
 
   .row
     align-items: center
@@ -63,19 +58,19 @@ body
 
       img
         //Disabling animation for development
-        // animation: fly 3s
+        animation: fly 3s
         animation-fill-mode: forwards
         max-width: 1200px
-        opacity: 0.5
+        // opacity: 0.5
         width: 100%
 
       @keyframes fly
         0%
           transform: translateY(60px)
-          opacity: 0
+          // opacity: 0
         100%
           transform: translateY(0px)
-          opacity: 0.5
+          // opacity: 0.5
           
       div
         position: absolute
@@ -110,15 +105,17 @@ body
     transform: scale(1.1)
   z-index: 10
   div
+    height: 100%
+    min-height: 450px
     margin-bottom: 20px
     margin-top:20px
     margin-right: 0
-    max-height: 400px
+    // max-height: 400px
     overflow: hidden
     position: relative
     // padding: 0 !important
     // padding-left: 0
-    // padding-right: 0
+    padding-right: 0
     // transition: ease-in 1s
 
     &:hover 
@@ -146,24 +143,36 @@ body
 
 
     div
-      // border-radius: inherit
-      opacity: 1
-      padding-top: 30px
-      padding-left: 30px
-      padding-bottom: 75%
+      background-color: #f4f4f4
+      min-height: auto
+      margin: 0 auto
+      margin-top: 20px
+      margin-right: 20px
+      padding: 10px
       position: relative
-      transition: ease-in-out 1s
-      &:hover
-        opacity: 1
+      width: 150px
+      h3
+        margin: 0
 
 
 // Until i get data sorted
 .custom-card 
+  div      
+    position: relative
+    div
+      .customCardCaption
+        background-color: white
+        height: auto
+        margin: 20px
+        padding: 20px
+        position: absolute
+        top: 0
 
   .single-row
-    // height: 100%
     div
       height: 100%
+
+
   .dual-row
     margin-top: 20px
     padding-right: 0
@@ -269,10 +278,10 @@ body
   
 @keyframes in 
   0%
-    opacity: 0
+    // opacity: 0
     transform: translate(100px)
   100%
-    opacity: 1
+    // opacity: 1
     transform: translate(0)
   
 
@@ -282,10 +291,10 @@ body
 
 @keyframes animateUp 
   0%
-    opacity: 0
+    // opacity: 0
     transform: translateY(200px)
   100%
-    opacity: 1
+    // opacity: 1
     transform: translateX(0)
 
 .aniLeft
@@ -294,10 +303,10 @@ body
 
 @keyframes animateLeft 
   0%
-    opacity: 0
+    // opacity: 0
     transform: translateX(100px)
   100%
-    opacity: 1
+    // opacity: 1
     transform: translateX(0)
   
 .aniRight
@@ -306,10 +315,10 @@ body
 
 @keyframes animateRight 
   0%
-    opacity: 0
+    // opacity: 0
     transform: translateX(-100px)
   100%
-    opacity: 1
+    // opacity: 1
     transform: translateX(0)
 
 
@@ -319,6 +328,6 @@ body
   height: 1000px
   *
     outline: 1px solid red
-    opacity: 2 !important
+    // opacity: 2 !important
   
     

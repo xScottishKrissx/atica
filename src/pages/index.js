@@ -99,7 +99,7 @@ if(typeof document !== 'undefined'){
 
     
     <Container fluid className="header">
-      <Row className="text up">
+      <Row className="text">
         <Col>
           <img src={header}></img>
           
@@ -118,7 +118,7 @@ if(typeof document !== 'undefined'){
 
 
 {/* Text 1 */}
-        <Row className="textArea right" >
+        <Row className="textArea right " >
           <Col md="12" >
             <span>Thinking about the world</span>
             <h2>Product Examples</h2>
@@ -133,8 +133,6 @@ if(typeof document !== 'undefined'){
             <span id="card-1"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
 
           </Col>
@@ -145,8 +143,6 @@ if(typeof document !== 'undefined'){
             <span id="card-2"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -154,8 +150,6 @@ if(typeof document !== 'undefined'){
             <span id="card-3"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div></Col>
 
         </Row>
@@ -166,8 +160,6 @@ if(typeof document !== 'undefined'){
             <span id="card-4"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
 
           </Col>
@@ -189,8 +181,6 @@ if(typeof document !== 'undefined'){
             <span id="card-5"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
 
           </Col>
@@ -201,8 +191,6 @@ if(typeof document !== 'undefined'){
             <span id="card-6"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -210,8 +198,6 @@ if(typeof document !== 'undefined'){
             <span id="card-7"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div></Col>
 
         </Row>
@@ -221,9 +207,7 @@ if(typeof document !== 'undefined'){
             {/* <img src={sofa} alt="" /> */}
             <span id="card-8"></span>
             <div>
-              <h3>Card Title 8</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
+              <h3>Card Title </h3>
             </div>
 
           </Col>
@@ -238,24 +222,37 @@ if(typeof document !== 'undefined'){
         </Row>
 
 {/* Card Section 3 */}
-<Row className="custom-card">
-      <div className="single-row col-md-6 right" >
-          <div>
+    <Row className="custom-card left">
+      <div className="single-row col-md-6" >
+          <div >
             <span className="testCard" id="card-11"></span>
+            <div className="customCardCaption">
+              <h3>Glasgow</h3>
+            </div>
           </div>
       </div>
 
-      <div className="dual-row col-md-6">
+      <div className="dual-row col-md-6 left">
 
-          <div className="row higher left">
+          <div className="row higher ">
               <div className="col-md-12">
-                  <div><span className="testCard" id="card-10"></span></div>
+                  <div>
+                    <span className="testCard" id="card-10"></span>
+                    <div className="customCardCaption">
+                      <h3>Ayr</h3>
+                    </div>
+                  </div>
               </div>
           </div>
 
-          <div className="row lower left">
+          <div className="row lower ">
               <div className="col-md-12">
-                  <div><span className="testCard" id="card-9"></span></div>
+                  <div>
+                    <span className="testCard" id="card-9"></span>
+                    <div className="customCardCaption">
+                      <h3>Edinburgh</h3>
+                    </div>
+                  </div>
               </div>
           </div>
 
@@ -309,8 +306,6 @@ if(typeof document !== 'undefined'){
             <span id="card-12"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -319,8 +314,6 @@ if(typeof document !== 'undefined'){
 
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -345,8 +338,6 @@ if(typeof document !== 'undefined'){
             <span id="card-14"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -354,8 +345,6 @@ if(typeof document !== 'undefined'){
             <span id="card-15"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -363,8 +352,6 @@ if(typeof document !== 'undefined'){
             <span id="card-16"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
@@ -372,8 +359,6 @@ if(typeof document !== 'undefined'){
             <span id="card-17"></span>
             <div>
               <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
             </div>
           </Col>
 
