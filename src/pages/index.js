@@ -12,47 +12,47 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import header from '../images/butterfly.png'
-import sofa from '../images/sofa.jpg'
 
 // markup
 const IndexPage = () => {
 
 
 
-function mouseHover(id,action){
-  // console.log(id + " : " + action)
-  if(typeof document !== 'undefined'){
-    if(action === "out")  {
-      setTimeout(function(){ 
-      document.getElementById(id).classList.remove('in')
-      document.getElementById(id).classList.add('out')
-      }, 1000);
-      // document.getElementById(id).classList.remove('in')
-      // document.getElementById(id).classList.add('out')
-    }
-    if(action === "in") {
+// function mouseHover(id,action){
+//   // console.log(id + " : " + action)
+//   if(typeof document !== 'undefined'){
+//     if(action === "out")  {
+//       setTimeout(function(){ 
+//       document.getElementById(id).classList.remove('in')
+//       document.getElementById(id).classList.add('out')
+//       }, 1000);
+//       // document.getElementById(id).classList.remove('in')
+//       // document.getElementById(id).classList.add('out')
+//     }
+//     if(action === "in") {
       
-      document.getElementById(id).classList.remove('out')
-      document.getElementById(id).classList.add('in')
+//       document.getElementById(id).classList.remove('out')
+//       document.getElementById(id).classList.add('in')
 
-    }
-  }
+//     }
+//   }
 
  
-}
+// }
   
 
 if(typeof document !== 'undefined'){
   // window.scrollTo(0,0)
-  let isLeaving = false;
+  // let isLeaving = false;
 
   function intersectionCallback(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        isLeaving = true;
-        console.log(entry.target.className)
+        // isLeaving = true;
 
         let targetRow = entry.target.className
+        let targetId = entry.target.id
+        console.log(entry.target)
         if(targetRow.includes("left")){
           entry.target.classList.add('aniLeft')
         }
@@ -65,11 +65,33 @@ if(typeof document !== 'undefined'){
           entry.target.classList.add('aniUp')
         }
 
+        if(targetId.includes("header")){
+          // entry.target.classList.add('aniUp')
+          console.log("WOoooooooooooooooooooooooooooooooo")
+          document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+        }
+        if(targetId.includes("products")){
+          // entry.target.classList.add('aniUp')
+          // console.log("WOoooooooooooooooooooooooooooooooo")
+          document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
+          document.getElementById("navBarProductsLink").classList.add('navChangeTemp')
+        }
+        
+        if(targetId.includes("materials")){
+          // entry.target.classList.add('aniUp')
+          // console.log("WOoooooooooooooooooooooooooooooooo")
+          document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+          document.getElementById("navBarMaterialsLink").classList.add('navChangeTemp')
+         
+        }
+
+ // document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+        // materials
 
 
         // entry.target.classList.add('testClass')
       } else {
-        isLeaving = false;
+        // isLeaving = false;
       }
     });
 
@@ -78,7 +100,7 @@ if(typeof document !== 'undefined'){
 
   let options = { threshold: [0.1] }
   let observer = new IntersectionObserver(intersectionCallback, options)
-  let elements = document.querySelectorAll('.row')
+  let elements = document.querySelectorAll('.row ')
 
   for (let elm of elements){
     observer.observe(elm)
@@ -91,17 +113,43 @@ if(typeof document !== 'undefined'){
   return (
 
 <>
-    {/* <Container fluid className="navbarWrapper">
-      <Row>
-        <Col>NavBar</Col>
-      </Row>
-    </Container> */}
+    <Container fluid className=" navbarWrapper">
+      <Navbar fixed="top" collapseOnSelect expand="lg ">
+        <Container>
+        <Navbar.Brand href="#home">
+          <img
+            src={header}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="atica website logo"
+          />
+          ATICA
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
+            <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
+            <Nav.Link href="#locations">Our Locations</Nav.Link>
+            <Nav.Link href="#guarantee">Our Guarantee</Nav.Link>
+
+          </Nav>
+          
+          <Nav>
+            <Nav.Link href="#subscription">Our Subscription</Nav.Link>
+          </Nav>
+
+        </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Container>
 
     
-    <Container fluid className="header">
+    <Container fluid className="header" >
       <Row className="text">
         <Col>
-          <img src={header}></img>
+          <img alt="" src={header}></img>
           
           <div>
             <h1>ATICA</h1>
@@ -113,12 +161,13 @@ if(typeof document !== 'undefined'){
       </Row>
     </Container>
 
-    <Container fluid="sm">
+    <Container fluid="sm" >
        
 
 
 {/* Text 1 */}
-        <Row className="textArea right " >
+        <span className="row" id="header"></span>
+        <Row className="textArea right " id=" products" >
           <Col md="12" >
             <span>Thinking about the world</span>
             <h2>Product Examples</h2>
@@ -166,7 +215,7 @@ if(typeof document !== 'undefined'){
         </Row>
 
 {/* Text Section 2 */}
-        <Row className="textArea left" >
+        <Row className="textArea left" id="materials">
           <Col md="12" >
             <span>text area 2</span>
             <h2>Material Examples</h2>
@@ -213,7 +262,7 @@ if(typeof document !== 'undefined'){
           </Col>
         </Row>
 {/* Text Section 3 */}
-        <Row className="textArea right" >
+        <Row className="textArea right" id="locations">
           <Col md="12" >
             <span>text area 3</span>
             <h2>Location Examples</h2>
@@ -222,7 +271,7 @@ if(typeof document !== 'undefined'){
         </Row>
 
 {/* Card Section 3 */}
-    <Row className="custom-card left">
+    <Row className="custom-card">
       <div className="single-row col-md-6" >
           <div >
             <span className="testCard" id="card-11"></span>
@@ -232,7 +281,7 @@ if(typeof document !== 'undefined'){
           </div>
       </div>
 
-      <div className="dual-row col-md-6 left">
+      <div className="dual-row col-md-6">
 
           <div className="row higher ">
               <div className="col-md-12">
@@ -292,7 +341,7 @@ if(typeof document !== 'undefined'){
         </Row> */}
 
 {/* Text Section 4 */}
-        <Row className="textArea left" >
+        <Row className="textArea left" id="guarantee">
           <Col md="12" >
             <span>text area 4</span>
             <h2>Atica Guarantee</h2>
@@ -364,7 +413,7 @@ if(typeof document !== 'undefined'){
 
         </Row>
 
-        <Row className="textArea up" >
+        <Row className="textArea up" id="subscription">
           <Col md="12" >
             <span>Footer Text</span>
             <h2>Furniture Subscription</h2>
