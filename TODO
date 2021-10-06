@@ -66,3 +66,6 @@ Body:
           ☐ All of this is being complicated by something going wrong in gatsby/sass. Making a change in my files doesnt always update the page. Adding a space to the end of a class sometimes does so...
           ☐ ...this is a pain in the neck and making troubleshooting a totally random task. I don't know if what i am doing is wrong or if the page just hasn't been updated.
           ☐ My only solution is to move on here. I have completed my main goal of understanding animating when scrolling into view so i have at least made some progress even if things are a bit buggy.
+          ☐ I don't know what to do.
+            ☐ The project is only randomly updating sometimes when i add a space after a div class. It's making working on this a near impossibility. It's hard enough learning something new, its even harder if the thing you're trying to learn is making it very difficult.
+            ☐ Getting demotivated so might call it a day and make a decision tommorow on whether to continue with gatsby. I think the design and project overall is worthwhile so i might switch to a standard react app + firebase to get this over the line.
