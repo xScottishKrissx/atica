@@ -43,7 +43,7 @@ useEffect(()=>{
   const isDocument = typeof document !== "undefined"
   console.log(isDocument)
   
-  if(isDocument){
+  // if(isDocument){
   
     function intersectionCallback(entries) {
       entries.forEach(function(entry) {
@@ -100,7 +100,7 @@ useEffect(()=>{
       observer.observe(elm)
     }
   
-  }
+  // }
 }, [])
 
 
