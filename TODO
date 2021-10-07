@@ -69,3 +69,24 @@ Body:
           ☐ I don't know what to do.
             ☐ The project is only randomly updating sometimes when i add a space after a div class. It's making working on this a near impossibility. It's hard enough learning something new, its even harder if the thing you're trying to learn is making it very difficult.
             ☐ Getting demotivated so might call it a day and make a decision tommorow on whether to continue with gatsby. I think the design and project overall is worthwhile so i might switch to a standard react app + firebase to get this over the line.
+          
+          Ok great, now my to-do isn't working...
+            ...but i think i fixed the issue. I took all all of my javascript code and put it inside of a useEffect hook.
+            ... i have very little knowledge about hooks but it seems to have fixed the problem of the page not running my code after refresh. Well it is now
+            ... i don't see any reason why what I am doing is "bad" as i havent seen any errors and the documentation seems to support that. I am essentially updating the page after render when something happens, so sort of like a componentDidUpdates?? maybe?? 
+            ... i really need to educate myself on hooks.
+
+            ...The long and short though is that I can proceed with this project as the problem seems to have been fixed.
+
+            ... now i need to figure out why my to-do plugin isn't working.
+
+
+
+
+
+
+
+
+
+
+
