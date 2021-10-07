@@ -41,7 +41,7 @@ const IndexPage = () => {
 
  
 // }
-const isDocument = typeof window !== "undefined"
+const isDocument = typeof document !== "undefined"
 
 useEffect(()=>{
   if(isDocument){
