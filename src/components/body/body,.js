@@ -13,7 +13,7 @@ import Subscription from './subscription/subscription';
 export const Body = (props) =>{
     
 return(
-    <Container fluid="sm" >
+    <Container fluid="sm" id="bodyContainer">
         <Products />
         <Materials />
         <Locations />

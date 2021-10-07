@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col'
 export const Team = (props) =>{
     
 return(
-    <div>
+    <div className="teamWrapper">
         <Row className="textArea up" >
           <Col md="12" >
             <span>text area 5</span>

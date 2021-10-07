@@ -39,6 +39,7 @@ Atica:
 General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
   ✔ I think it's time to split up the file into components. @done(17:49 - 07/10/21)
+      ☐ javascript is still a bit much though
 Navbar:
   ☐ Integrate the navbar with the intersectionObserver stuff
     ☐ I've figured this out although my solution might need to be more optimised, there's a lot of lines for code that does the same thing
@@ -85,6 +86,7 @@ Body:
         ...this has been a poor few days, lots of smaller issues getting me a little demotivated.  
         ✔ Woo, to-do is working again @done(15:20 - 07/10/21)
         ✔ Note :: import sass in css, it will break the website when attempting to deploy to server. @done(16:34 - 07/10/21)
+        ✔ 7/10/2021 - The make or break day for this project. A lot of issues to be fixed but i got through it. Tommorow i will crack on with more styling to get everything as I want it, then I will look into GraphiQL and start making some pages. @done(18:11 - 07/10/21)
 
 
 
