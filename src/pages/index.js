@@ -3,14 +3,12 @@ import {useState, useEffect, useRef } from "react";
 import './index.sass';
 
 
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import header from '../images/butterfly.png'
+import CustomNavbar from "../components/navbar/customNavbar";
+import Header from "../components/body/header/header";
 
 // markup
 const IndexPage = () => {
@@ -145,53 +143,10 @@ useEffect(()=>{
   return (
 
 <>
-    <Container fluid className=" navbarWrapper">
-      <Navbar fixed="top" collapseOnSelect expand="lg ">
-        <Container>
-        <Navbar.Brand href="#top">
-          <img
-            src={header}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="atica website logo"
-          />
-          ATICA
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
-            <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
-            <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
-            <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
-
-          </Nav>
-          
-          <Nav>
-            <Nav.Link id="navBarSubscriptionLink" href="#subscription">Our Subscription</Nav.Link>
-          </Nav>
-
-        </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Container>
+  <CustomNavbar />
+  <Header />
 
     
-    <Container fluid className="header" id="top">
-      <Row className="text">
-        <Col>
-          <img alt="" src={header}></img>
-          
-          <div>
-            <h1>ATICA</h1>
-            <p>Something profound and over the top copy about furniture, specifically about furniture from us</p>
-            {/* <button>Call to action</button> */}
-          </div>
-
-        </Col>
-      </Row>
-    </Container>
     <span className="row" id="header"></span>
     <Container fluid="sm" >
        
