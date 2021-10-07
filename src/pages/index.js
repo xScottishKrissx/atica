@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useEffect } from "react";
+import {useState, useEffect, useRef } from "react";
 import './index.sass';
 
 
@@ -38,13 +38,22 @@ const IndexPage = () => {
  
 // }
 
+  // const prevScrollY = useRef(0);
 
 useEffect(()=>{
-  const isDocument = typeof document !== "undefined"
-  console.log(isDocument)
-  
-  // if(isDocument){
-  
+
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;  
+      if(currentScrollY < 200) document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    
+
+
+
     function intersectionCallback(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -52,7 +61,7 @@ useEffect(()=>{
   
           let targetRow = entry.target.className
           let targetId = entry.target.id
-          console.log(entry.target)
+          // console.log(entry.target)
           if(targetRow.includes("left")){
             entry.target.classList.add('aniLeft')
           }
@@ -65,19 +74,46 @@ useEffect(()=>{
             entry.target.classList.add('aniUp')
           }
   
+          
           if(targetId.includes("header")){
-            console.log("WOoooooooooooooooooooooooooooooooo")
-            document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+            
+            // console.log("WOoooooooooooooooooooooooooooooooo")
+            // document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
           }
           if(targetId.includes("products")){
             document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
-            document.getElementById("navBarProductsLink").classList.add('navChangeTemp')
+            document.getElementById("navBarProductsLink").classList.add('navChangeTemp') 
+            document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp')
           }
           
           if(targetId.includes("materials")){
 
             document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
             document.getElementById("navBarMaterialsLink").classList.add('navChangeTemp')
+            document.getElementById("navBarLocationsLink").classList.remove('navChangeTemp')
+           
+          }
+          
+          if(targetId.includes("locations")){
+
+            document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp')
+            document.getElementById("navBarLocationsLink").classList.add('navChangeTemp')
+            document.getElementById("navBarGuaranteeLink").classList.remove('navChangeTemp')
+           
+          }
+          
+          if(targetId.includes("guarantee")){
+            console.log("Guarantee")
+            document.getElementById("navBarLocationsLink").classList.remove('navChangeTemp')
+            document.getElementById("navBarGuaranteeLink").classList.add('navChangeTemp')
+            document.getElementById("navBarSubscriptionLink").classList.remove('navChangeTemp')
+           
+          }
+          
+          if(targetId.includes("subscription")){
+
+            document.getElementById("navBarGuaranteeLink").classList.remove('navChangeTemp')
+            document.getElementById("navBarSubscriptionLink").classList.add('navChangeTemp')
            
           }
 
@@ -92,15 +128,12 @@ useEffect(()=>{
     let options = { threshold: [0.1] }
     let observer = new IntersectionObserver(intersectionCallback, options)
 
-
-    let elements
-    if(isDocument) elements = document.querySelectorAll('.row ')
+    let elements = document.querySelectorAll('.row ')
   
     for (let elm of elements){
       observer.observe(elm)
     }
-  
-  // }
+    return () => window.removeEventListener("scroll", handleScroll);
 }, [])
 
 
@@ -115,7 +148,7 @@ useEffect(()=>{
     <Container fluid className=" navbarWrapper">
       <Navbar fixed="top" collapseOnSelect expand="lg ">
         <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#top">
           <img
             src={header}
             width="30"
@@ -130,13 +163,13 @@ useEffect(()=>{
           <Nav className="me-auto">
             <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
             <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
-            <Nav.Link href="#locations">Our Locations</Nav.Link>
-            <Nav.Link href="#guarantee">Our Guarantee</Nav.Link>
+            <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
+            <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
 
           </Nav>
           
           <Nav>
-            <Nav.Link href="#subscription">Our Subscription</Nav.Link>
+            <Nav.Link id="navBarSubscriptionLink" href="#subscription">Our Subscription</Nav.Link>
           </Nav>
 
         </Navbar.Collapse>
@@ -145,7 +178,7 @@ useEffect(()=>{
     </Container>
 
     
-    <Container fluid className="header" >
+    <Container fluid className="header" id="top">
       <Row className="text">
         <Col>
           <img alt="" src={header}></img>
@@ -159,14 +192,14 @@ useEffect(()=>{
         </Col>
       </Row>
     </Container>
-
+    <span className="row" id="header"></span>
     <Container fluid="sm" >
        
 
 
 {/* Text 1 */}
-        <span className="row" id="header"></span>
-        <Row className="textArea right " id=" products" >
+       
+        <Row className="textArea right " id="products" >
           <Col md="12" >
             <span>Thinking about the world</span>
             <h2>Product Examples</h2>
@@ -261,7 +294,8 @@ useEffect(()=>{
           </Col>
         </Row>
 {/* Text Section 3 */}
-        <Row className="textArea right" id="locations">
+<div className="locationsWrapper">
+          <Row className="textArea right" id="locations">
           <Col md="12" >
             <span>text area 3</span>
             <h2>Location Examples</h2>
@@ -270,74 +304,44 @@ useEffect(()=>{
         </Row>
 
 {/* Card Section 3 */}
-    <Row className="custom-card">
-      <div className="single-row col-md-6" >
-          <div >
-            <span className="testCard" id="card-11"></span>
-            <div className="customCardCaption">
-              <h3>Glasgow</h3>
-            </div>
-          </div>
-      </div>
-
-      <div className="dual-row col-md-6">
-
-          <div className="row higher ">
-              <div className="col-md-12">
-                  <div>
-                    <span className="testCard" id="card-10"></span>
-                    <div className="customCardCaption">
-                      <h3>Ayr</h3>
-                    </div>
-                  </div>
+        <Row className="custom-card">
+          <div className="single-row col-md-6" >
+              <div >
+                <span className="testCard" id="card-11"></span>
+                <div className="customCardCaption">
+                  <h3>Glasgow</h3>
+                </div>
               </div>
           </div>
 
-          <div className="row lower ">
-              <div className="col-md-12">
-                  <div>
-                    <span className="testCard" id="card-9"></span>
-                    <div className="customCardCaption">
-                      <h3>Edinburgh</h3>
-                    </div>
+          <div className="dual-row col-md-6">
+
+              <div className="row higher ">
+                  <div className="col-md-12">
+                      <div>
+                        <span className="testCard" id="card-10"></span>
+                        <div className="customCardCaption">
+                          <h3>Ayr</h3>
+                        </div>
+                      </div>
                   </div>
               </div>
+
+              <div className="row lower ">
+                  <div className="col-md-12">
+                      <div>
+                        <span className="testCard" id="card-9"></span>
+                        <div className="customCardCaption">
+                          <h3>Edinburgh</h3>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
           </div>
-
-      </div>
-    </Row>
-
-        {/* <Row md="8" className="card dual right">
-          <Col md={6}>
-            <span id="card-9"></span>
-            <div>
-              <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
-            </div>
-          </Col>
-
-          <Col md={6}>            
-            <span id="card-10"></span>
-            <div>
-              <h3>Card Title</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
-            </div></Col>
-
         </Row>
+</div>
 
-        <Row className="card right">
-            <Col md="12" >
-            <span id="card-11"></span>
-            <div>
-              <h3>Card Title 8</h3>
-              <p>Some copy that goes onto the card</p>
-              <button>Link to page</button>
-            </div>
-
-          </Col>
-        </Row> */}
 
 {/* Text Section 4 */}
         <Row className="textArea left" id="guarantee">
@@ -419,26 +423,6 @@ useEffect(()=>{
             <button>Call To Action</button>
           </Col>
         </Row>
-
-
-
-
-        {/* <h1>Text Area 1</h1>
-
-        <h1>Card Block 2</h1>
-        <h1>Text Area 2</h1>
-
-        <h1>Card Block 3</h1>
-        <h1>Text Area 3</h1>
-
-        <h1>Footer Block</h1>
-          <h1>Footer Cards</h1>
-          <h1>Footer Text</h1> */}
-    
-      
-
-
-
 
     </Container>
     </>

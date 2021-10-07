@@ -38,9 +38,12 @@ Atica:
 
 General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
+  ☐ I think it's time to split up the file into components.
 Navbar:
   ☐ Integrate the navbar with the intersectionObserver stuff
     ☐ I've figured this out although my solution might need to be more optimised, there's a lot of lines for code that does the same thing
+    ✔ I have the on navbar links changing colour as you scroll down the page past the relevant section. @done(16:36 - 07/10/21)
+      ☐ I just need to properly style this change
 
 Header:
   ✔ Add image @done(12:00 - 04/10/21)
@@ -63,12 +66,12 @@ Body:
             header - start with 1 opacity
             row - start with 0, then fade in
               maybe remove all opacity and try again
-          ☐ All of this is being complicated by something going wrong in gatsby/sass. Making a change in my files doesnt always update the page. Adding a space to the end of a class sometimes does so...
-          ☐ ...this is a pain in the neck and making troubleshooting a totally random task. I don't know if what i am doing is wrong or if the page just hasn't been updated.
-          ☐ My only solution is to move on here. I have completed my main goal of understanding animating when scrolling into view so i have at least made some progress even if things are a bit buggy.
-          ☐ I don't know what to do.
-            ☐ The project is only randomly updating sometimes when i add a space after a div class. It's making working on this a near impossibility. It's hard enough learning something new, its even harder if the thing you're trying to learn is making it very difficult.
-            ☐ Getting demotivated so might call it a day and make a decision tommorow on whether to continue with gatsby. I think the design and project overall is worthwhile so i might switch to a standard react app + firebase to get this over the line.
+           All of this is being complicated by something going wrong in gatsby/sass. Making a change in my files doesnt always update the page. Adding a space to the end of a class sometimes does so...
+           ...this is a pain in the neck and making troubleshooting a totally random task. I don't know if what i am doing is wrong or if the page just hasn't been updated.
+           My only solution is to move on here. I have completed my main goal of understanding animating when scrolling into view so i have at least made some progress even if things are a bit buggy.
+           I don't know what to do.
+             The project is only randomly updating sometimes when i add a space after a div class. It's making working on this a near impossibility. It's hard enough learning something new, its even harder if the thing you're trying to learn is making it very difficult.
+            ☐Getting demotivated so might call it a day and make a decision tommorow on whether to continue with gatsby. I think the design and project overall is worthwhile so i might switch to a standard react app + firebase to get this over the line.
           
           Ok great, now my to-do isn't working...
             ...but i think i fixed the issue. I took all all of my javascript code and put it inside of a useEffect hook.
@@ -81,7 +84,7 @@ Body:
             ... now i need to figure out why my to-do plugin isn't working.
         ...this has been a poor few days, lots of smaller issues getting me a little demotivated.  
         ✔ Woo, to-do is working again @done(15:20 - 07/10/21)
-        ☐ Note :: import sass in css, it will break the website when attempting to deploy to server.
+        ✔ Note :: import sass in css, it will break the website when attempting to deploy to server. @done(16:34 - 07/10/21)
 
 
 
