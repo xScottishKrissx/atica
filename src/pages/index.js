@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import './index.sass';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -42,9 +41,10 @@ const IndexPage = () => {
 
  
 // }
-  
+const isDocument = typeof window !== "undefined"
+
 useEffect(()=>{
-  if(typeof document !== 'undefined'){
+  if(isDocument){
     // window.scrollTo(0,0)
     // let isLeaving = false;
   
@@ -103,7 +103,10 @@ useEffect(()=>{
   
     let options = { threshold: [0.1] }
     let observer = new IntersectionObserver(intersectionCallback, options)
-    let elements = document.querySelectorAll('.row ')
+
+
+    let elements
+    if(isDocument) elements = document.querySelectorAll('.row ')
   
     for (let elm of elements){
       observer.observe(elm)
