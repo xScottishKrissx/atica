@@ -42,78 +42,68 @@ const IndexPage = () => {
  
 // }
 const isDocument = typeof document !== "undefined"
+console.log(isDocument)
 
-useEffect(()=>{
-  if(isDocument){
-    // window.scrollTo(0,0)
-    // let isLeaving = false;
+// useEffect(()=>{
+//   if(isDocument){
   
-    function intersectionCallback(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          // isLeaving = true;
+//     function intersectionCallback(entries) {
+//       entries.forEach(function(entry) {
+//         if (entry.isIntersecting) {
+//           // isLeaving = true;
   
-          let targetRow = entry.target.className
-          let targetId = entry.target.id
-          console.log(entry.target)
-          if(targetRow.includes("left")){
-            entry.target.classList.add('aniLeft')
-          }
+//           let targetRow = entry.target.className
+//           let targetId = entry.target.id
+//           console.log(entry.target)
+//           if(targetRow.includes("left")){
+//             entry.target.classList.add('aniLeft')
+//           }
   
-          if(targetRow.includes("right")){
-            entry.target.classList.add('aniRight')
-          }
+//           if(targetRow.includes("right")){
+//             entry.target.classList.add('aniRight')
+//           }
   
-          if(targetRow.includes("up")){
-            entry.target.classList.add('aniUp')
-          }
+//           if(targetRow.includes("up")){
+//             entry.target.classList.add('aniUp')
+//           }
   
-          if(targetId.includes("header")){
-            // entry.target.classList.add('aniUp')
-            console.log("WOoooooooooooooooooooooooooooooooo")
-            document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
-          }
-          if(targetId.includes("products")){
-            // entry.target.classList.add('aniUp')
-            // console.log("WOoooooooooooooooooooooooooooooooo")
-            document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
-            document.getElementById("navBarProductsLink").classList.add('navChangeTemp')
-          }
+//           if(targetId.includes("header")){
+//             console.log("WOoooooooooooooooooooooooooooooooo")
+//             document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+//           }
+//           if(targetId.includes("products")){
+//             document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
+//             document.getElementById("navBarProductsLink").classList.add('navChangeTemp')
+//           }
           
-          if(targetId.includes("materials")){
-            // entry.target.classList.add('aniUp')
-            // console.log("WOoooooooooooooooooooooooooooooooo")
-            document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
-            document.getElementById("navBarMaterialsLink").classList.add('navChangeTemp')
+//           if(targetId.includes("materials")){
+
+//             document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+//             document.getElementById("navBarMaterialsLink").classList.add('navChangeTemp')
            
-          }
+//           }
+
+//         } else {
+
+//         }
+//       });
   
-   // document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
-          // materials
-  
-  
-          // entry.target.classList.add('testClass')
-        } else {
-          // isLeaving = false;
-        }
-      });
-  
-    }
+//     }
     
   
-    let options = { threshold: [0.1] }
-    let observer = new IntersectionObserver(intersectionCallback, options)
+//     let options = { threshold: [0.1] }
+//     let observer = new IntersectionObserver(intersectionCallback, options)
 
 
-    let elements
-    if(isDocument) elements = document.querySelectorAll('.row ')
+//     let elements
+//     if(isDocument) elements = document.querySelectorAll('.row ')
   
-    for (let elm of elements){
-      observer.observe(elm)
-    }
+//     for (let elm of elements){
+//       observer.observe(elm)
+//     }
   
-  }
-}, [])
+//   }
+// }, [])
 
 
 
