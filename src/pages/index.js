@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import './index.sass';
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,7 +18,92 @@ import header from '../images/butterfly.png'
 const IndexPage = () => {
 
 
+// function mouseHover(id,action){
+//   // console.log(id + " : " + action)
+//   if(typeof document !== 'undefined'){
+//     if(action === "out")  {
+//       setTimeout(function(){ 
+//       document.getElementById(id).classList.remove('in')
+//       document.getElementById(id).classList.add('out')
+//       }, 1000);
+//       // document.getElementById(id).classList.remove('in')
+//       // document.getElementById(id).classList.add('out')
+//     }
+//     if(action === "in") {
+      
+//       document.getElementById(id).classList.remove('out')
+//       document.getElementById(id).classList.add('in')
 
+//     }
+//   }
+
+ 
+// }
+
+
+// useEffect(()=>{
+//   const isDocument = typeof document !== "undefined"
+//   console.log(isDocument)
+  
+//   if(isDocument){
+  
+//     function intersectionCallback(entries) {
+//       entries.forEach(function(entry) {
+//         if (entry.isIntersecting) {
+//           // isLeaving = true;
+  
+//           let targetRow = entry.target.className
+//           let targetId = entry.target.id
+//           console.log(entry.target)
+//           if(targetRow.includes("left")){
+//             entry.target.classList.add('aniLeft')
+//           }
+  
+//           if(targetRow.includes("right")){
+//             entry.target.classList.add('aniRight')
+//           }
+  
+//           if(targetRow.includes("up")){
+//             entry.target.classList.add('aniUp')
+//           }
+  
+//           if(targetId.includes("header")){
+//             console.log("WOoooooooooooooooooooooooooooooooo")
+//             document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+//           }
+//           if(targetId.includes("products")){
+//             document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
+//             document.getElementById("navBarProductsLink").classList.add('navChangeTemp')
+//           }
+          
+//           if(targetId.includes("materials")){
+
+//             document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
+//             document.getElementById("navBarMaterialsLink").classList.add('navChangeTemp')
+           
+//           }
+
+//         } else {
+
+//         }
+//       });
+  
+//     }
+    
+  
+//     let options = { threshold: [0.1] }
+//     let observer = new IntersectionObserver(intersectionCallback, options)
+
+
+//     let elements
+//     if(isDocument) elements = document.querySelectorAll('.row ')
+  
+//     for (let elm of elements){
+//       observer.observe(elm)
+//     }
+  
+//   }
+// }, [])
 
 
 
