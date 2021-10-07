@@ -1,0 +1,47 @@
+.header
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100vh
+  // opacity: 1
+
+  .row
+    align-items: center
+    justify-content: center
+    .col
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      img
+        //Disabling animation for development
+        animation: fly 3s
+        animation-fill-mode: forwards
+        max-width: 300px
+        // opacity: 0.5
+        width: 100%
+
+      @keyframes fly
+        0%
+          transform: translateY(60px)
+          opacity: 0
+        100%
+          transform: translateY(0px)
+          opacity: 1
+          
+      div
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        
+
+
+        h1
+          font-size: 6rem
+@media (min-width: 768px)
+  .header
+    .row
+      .col
+        flex-direction: row

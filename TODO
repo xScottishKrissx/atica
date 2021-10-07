@@ -38,7 +38,7 @@ Atica:
 
 General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
-  ☐ I think it's time to split up the file into components.
+  ✔ I think it's time to split up the file into components. @done(17:49 - 07/10/21)
 Navbar:
   ☐ Integrate the navbar with the intersectionObserver stuff
     ☐ I've figured this out although my solution might need to be more optimised, there's a lot of lines for code that does the same thing
