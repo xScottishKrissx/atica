@@ -11,7 +11,6 @@ return(
     <div className="subscriptionWrapper">
           <Row className="textArea up" id="subscription">
           <Col md="12" >
-            <span>A new way to hoard</span>
             <h2>ATICA+</h2>
           </Col>
         </Row>
