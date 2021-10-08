@@ -36,7 +36,7 @@ return(
           </Nav>
           
           <Nav>
-            <Nav.Link id="navBarSubscriptionLink" href="#subscription">Our Subscription</Nav.Link>
+            <Nav.Link id="navBarSubscriptionLink" href="#subscription">ATICA+</Nav.Link>
           </Nav>
 
         </Navbar.Collapse>

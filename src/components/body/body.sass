@@ -1,13 +1,15 @@
 
 #bodyContainer
   > div
-     min-height: 60vh
+      min-height: 60vh
       //  outline: 1px solid black
-     display: flex
-     flex-direction: column
-     justify-content: center
-      //  padding-top: 50px
-      //  padding-bottom: 50px
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      @media (min-width: 976px)
+        min-height: 100vh
+        padding-top: 110px
 
 .textArea
   // margin-bottom: 20px
@@ -48,38 +50,44 @@
     padding-right: 0
     // transition: ease-in 1s
 
-    img
-      width: 100%
-    span
-      background-position: center
-      background-size: cover
-      background-repeat: no-repeat
-      // border-radius: inherit
-      height: 100%
-      position: absolute
-      width: 100%
-      // animation: scaleCardImageIn 1s
-      // animation-fill-mode: both
-      transition: ease-in 0.3s
-      &:hover
-        transform: scale(1.1)
-
-
-    div
-      background-color: #f4f4f4
-      box-shadow: 10px 8px 0px 0px #0000001a
-      height: auto
-      margin: 0 auto
-      margin-top: 20px
-      margin-right: 20px
-      padding: 10px
-      position: relative
-      width: 175px
-      h3
+    .innerCardWrap
+        background-color: red
+        min-height: 450px
+        padding: 0
         margin: 0
-        font-size: 18px
-      p
-        margin-top: 1rem
+        width: 100%
+        div
+            min-height: auto
+        span
+          background-position: center
+          background-size: cover
+          background-repeat: no-repeat
+          // border-radius: inherit
+          height: 100%
+          position: absolute
+          width: 100%
+          // animation: scaleCardImageIn 1s
+          // animation-fill-mode: both
+          transition: ease-in 0.3s
+          &:hover
+            transform: scale(1.1)
+
+
+        div
+          background-color: #f4f4f4
+          box-shadow: 10px 8px 0px 0px #0000001a
+          height: auto
+          margin: 0 auto
+          margin-top: 20px
+          margin-right: 20px
+          padding: 10px
+          position: relative
+          width: 175px
+          h3
+            margin: 0
+            font-size: 18px
+          p
+            margin-top: 1rem
     
 
 

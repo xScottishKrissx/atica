@@ -8,24 +8,26 @@ import Col from 'react-bootstrap/Col'
 export const Materials = (props) =>{
     
 return(
-    <div className="materialsWrapper">
+    <div className="materialsWrapper" id="materials">
         {/* Text 1 */}
        
-        <Row className="textArea left" id="materials">
+        <Row className="textArea left" >
           <Col md="12" >
-            <span>text area 2</span>
-            <h2>Material Examples</h2>
-            <p>Wood - Brown Wood - Yellow Wood - Black Wood  </p>
+            <h2>Our Materials</h2>
+            <p>Dedicated to eco-friendly, renewable sources.</p>
           </Col>
         </Row>
 
 {/* Card Section 2 */}    
         <Row className="card left" >
           <Col md="12" >
-            {/* <img src={sofa} alt="" /> */}
-            <span id="card-5"></span>
-            <div>
-              <h3>Card Title</h3>
+
+          <div className="innerCardWrap">
+              <span id="card-5"></span>
+              <div>
+                <h3>Wood</h3>
+                <p>From Pine to Mahogany, we've got wood</p>
+              </div>
             </div>
 
           </Col>
@@ -33,28 +35,36 @@ return(
 
         <Row md="8" className="card dual left">
           <Col md={6}>
-            <span id="card-6"></span>
-            <div>
-              <h3>Card Title</h3>
+          <div className="innerCardWrap">
+              <span id="card-6"></span>
+              <div>
+                <h3>Plastics</h3>
+                <p>We're proud of our efforts to turn plastic waste into usable products</p>
+              </div>
             </div>
           </Col>
 
           <Col md={6}>            
+          <div className="innerCardWrap">
             <span id="card-7"></span>
             <div>
-              <h3>Card Title</h3>
-            </div></Col>
+              <h3>Hemp</h3>
+              <p>You'd be amazed what you can produce with hemp</p>
+            </div>
+          </div>
+          </Col>
 
         </Row>
 
         <Row className="card left">
             <Col md="12" >
-            {/* <img src={sofa} alt="" /> */}
-            <span id="card-8"></span>
-            <div>
-              <h3>Card Title </h3>
+            <div className="innerCardWrap">
+              <span id="card-8"></span>
+              <div>
+                <h3>Grown</h3>
+                <p>Attica offers a range of limited, tree grown furniture</p>
+              </div>
             </div>
-
           </Col>
         </Row>
         

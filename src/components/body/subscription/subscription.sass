@@ -10,22 +10,33 @@
             padding: 0
 
             $border: 10px solid 
+            $boxShadow: 10px 10px 0px 0px
+            $bronze: #cd7f32
+            $silver: #c0c0c0
+            $gold: #ffd700
+            $platinum: #8da2c0
             #aticaBronze
-                border-bottom: $border #cd7f32
+                // border-bottom: $border $bronze
+                box-shadow: $boxShadow $bronze
             #aticaSilver
-                border-bottom: $border #c0c0c0
+                // border-bottom: $border $silver
+                box-shadow: $boxShadow $silver
             #aticaGold
-                border-bottom: $border #ffd700
+                // border-bottom: $border $gold
+                box-shadow: $boxShadow $gold
             #aticaPlatinum
-                border-bottom: $border #e5e4e2
+                // border-bottom: $border $platinum
+                box-shadow: $boxShadow $platinum
 
             div
-                // box-shadow: 0px 10px 0px 0px #8094b0
+                // box-shadow: 9px 5px 11px 0px #8094b0
+                background-color: white
                 cursor: pointer
                 flex-direction: column
                 position: absolute
                 height: 90%
-                outline: 1px solid black
+                min-height: auto
+                // outline: 1px solid red
                 width: 90%
                 display: flex
                 margin: 0

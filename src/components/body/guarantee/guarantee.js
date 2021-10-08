@@ -8,9 +8,9 @@ import Col from 'react-bootstrap/Col'
 export const Guarantee = (props) =>{
     
 return(
-    <div className="guaranteeWrapper">
+    <div className="guaranteeWrapper" id="guarantee">
         {/* Text Section 4 */}
-        <Row className="textArea left" id="guarantee">
+        <Row className="textArea left" >
           <Col md="12" >
             <h2>Atica Guarantee</h2>
           </Col>
