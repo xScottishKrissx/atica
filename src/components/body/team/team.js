@@ -16,9 +16,13 @@ export const Team = (props) =>{
     
 return(
     <div className="teamWrapper">
-        <Row className="textArea up" >
+        <Row className="up" >
           <Col>
-            <h2>Meet the team</h2>
+              <Row className="textArea left" id="guarantee">
+                <Col md="12" >
+                  <h2>Meet the team</h2>
+                </Col>
+              </Row>
             <Row>
 
               <Col md={4}>

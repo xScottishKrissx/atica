@@ -87,12 +87,13 @@ Body:
         ✔ Woo, to-do is working again @done(15:20 - 07/10/21)
         ✔ Note :: import sass in css, it will break the website when attempting to deploy to server. @done(16:34 - 07/10/21)
         ✔ 7/10/2021 - The make or break day for this project. A lot of issues to be fixed but i got through it. Tommorow i will crack on with more styling to get everything as I want it, then I will look into GraphiQL and start making some pages. @done(18:11 - 07/10/21)
+    ☐ I may have a  solution here but it's going to require a change to every component with a card. I might look into creating a dedicated card component here
 
 Team Section:
   ☐ Add 6 cards
     ☐ Include photos for each person
       ✔ Photos in place, names picked and positions applied @done(12:59 - 08/10/21)
-        ☐ Style above...
+        ✔ Style above... @done(16:37 - 08/10/21)
 Footer / Subscription Section:
   ✔ Style cards in footer @done(12:32 - 08/10/21)
 

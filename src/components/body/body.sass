@@ -6,12 +6,13 @@
      display: flex
      flex-direction: column
      justify-content: center
-     padding-top: 50px
-     padding-bottom: 50px
+      //  padding-top: 50px
+      //  padding-bottom: 50px
 
 .textArea
-  margin-bottom: 20px
-  margin-top: 20px !important
+  // margin-bottom: 20px
+  // margin-top: 20px !important
+  // outline: 5px solid black
   z-index: 0
   div
     display: flex
@@ -28,15 +29,16 @@
       margin-bottom: 20px
     p
       font-size: 20px
-  
+
+
 .card
 
   z-index: 10
   div
     height: 100%
     min-height: 450px
-    margin-bottom: 20px
-    margin-top:20px
+    // margin-bottom: 20px
+    // margin-top:20px
     margin-right: 0
     // max-height: 400px
     overflow: hidden
@@ -58,19 +60,26 @@
       width: 100%
       // animation: scaleCardImageIn 1s
       // animation-fill-mode: both
+      transition: ease-in 0.3s
+      &:hover
+        transform: scale(1.1)
 
 
     div
       background-color: #f4f4f4
-      min-height: auto
+      box-shadow: 10px 8px 0px 0px #0000001a
+      height: auto
       margin: 0 auto
       margin-top: 20px
       margin-right: 20px
       padding: 10px
       position: relative
-      width: 150px
+      width: 175px
       h3
         margin: 0
+        font-size: 18px
+      p
+        margin-top: 1rem
     
 
 
