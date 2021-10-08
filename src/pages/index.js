@@ -6,6 +6,7 @@ import './index.sass';
 import CustomNavbar from "../components/navbar/customNavbar";
 import Header from "../components/body/header/header";
 import Body from "../components/body/body,";
+import Footer from "../components/footer/footer";
 
 // markup
 const IndexPage = () => {
@@ -135,7 +136,7 @@ useEffect(()=>{
       <CustomNavbar />
       <Header />
       <Body />
-
+      <Footer />
     </>
 
   )

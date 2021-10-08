@@ -1,0 +1,35 @@
+.footerWrapper
+    background-color: white
+    display: flex
+    justify-content: center
+    .innerFooterWrapper
+        background-color: white
+        max-width: 1320px
+        width: 50%
+        div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center                
+            @media (min-width: 976px)
+                align-items: flex-start
+            img
+                width: 100%
+                max-width: 300px
+                @media (min-width: 976px)
+                    margin: 0 auto
+            span
+                font-size: 5rem
+            ul
+                display: flex
+                list-style-type: none
+                justify-content: center
+                width: 100%
+                padding: 0
+                @media (min-width: 976px)
+                    justify-content: flex-start
+
+                li
+                    // margin-left:5px
+                    margin-right:5px
+
