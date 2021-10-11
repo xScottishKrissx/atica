@@ -76,11 +76,17 @@ useEffect(()=>{
           if(targetId.includes("guarantee")){
             document.getElementById("navBarLocationsLink").classList.remove('navChangeTemp')
             document.getElementById("navBarGuaranteeLink").classList.add('navChangeTemp')
+            document.getElementById("navBarTeamLink").classList.remove('navChangeTemp')
+          }
+
+          if(targetId.includes("team")){
+            document.getElementById("navBarGuaranteeLink").classList.remove('navChangeTemp')
+            document.getElementById("navBarTeamLink").classList.add('navChangeTemp')
             document.getElementById("navBarSubscriptionLink").classList.remove('navChangeTemp')
           }
           
           if(targetId.includes("subscription")){
-            document.getElementById("navBarGuaranteeLink").classList.remove('navChangeTemp')
+            document.getElementById("navBarTeamLink").classList.remove('navChangeTemp')
             document.getElementById("navBarSubscriptionLink").classList.add('navChangeTemp')
           }
 

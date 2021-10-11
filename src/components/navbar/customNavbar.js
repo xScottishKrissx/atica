@@ -35,6 +35,7 @@ return(
                 <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
                 <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
                 <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
+                <Nav.Link id="navBarTeamLink" href="#team">Our Team</Nav.Link>
     
               </Nav>
               

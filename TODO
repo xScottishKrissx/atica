@@ -42,7 +42,8 @@ General:
       ✔ javascript is still a bit much though @done(16:14 - 11/10/21)
   ☐ There's a fair amount of stuttering for some of the animations, especially near the bottom
     ✔ The main barrier to fixing this is that localhost and cloud deployed versions behave differently on load so i can only test this when deployed. not great. @done(16:33 - 11/10/21)
-    ☐ I may have a fix that involves just skipping the stuttering start by hiding it behind a fade in.
+    ✔ I may have a fix that involves just skipping the stuttering start by hiding it behind a fade in. @done(16:35 - 11/10/21)
+      ✔ This worked but the our products was stuttery the very first time i loaded the page. Haven't been able to replicate this so it might just be a cache issue. @done(16:36 - 11/10/21)
   
 Navbar:
   ✔ Integrate the navbar with the intersectionObserver stuff @done(16:14 - 11/10/21)
