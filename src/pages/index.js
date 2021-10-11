@@ -101,7 +101,8 @@ useEffect(()=>{
     let options = { threshold: [0.1] }
     let observer = new IntersectionObserver(intersectionCallback, options)
 
-    let elements = document.querySelectorAll('.row ')
+    // let elements = document.querySelectorAll('.row ')
+    let elements = document.querySelectorAll('div')
   
     for (let elm of elements){
       observer.observe(elm)

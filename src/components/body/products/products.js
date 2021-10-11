@@ -10,7 +10,7 @@ export const Products = (props) =>{
 
 // console.log(props.cardInfo)
 return(
-    <div className="productsWrapper"  >
+    <div className="productsWrapper up"  >
       
 
         <Row className="textArea right" id="products">
