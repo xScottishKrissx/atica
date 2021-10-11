@@ -8,8 +8,8 @@ import Col from 'react-bootstrap/Col'
 export const Locations = (props) =>{
     
 return(
-<div className="locationsWrapper" id="locations">
-          <Row className="textArea right" >
+<div className="locationsWrapper" >
+          <Row className="textArea right" id="locations">
           <Col md="12" >
             <h2>Our Locations</h2>
             <p>Glasgow - Ayr - Edinburgh </p>

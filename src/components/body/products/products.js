@@ -8,9 +8,9 @@ import Col from 'react-bootstrap/Col'
 export const Products = (props) =>{
     
 return(
-    <div className="productsWrapper" id="products" >
+    <div className="productsWrapper"  >
 
-        <Row className="textArea right " >
+        <Row className="textArea right" id="products">
           <Col md="12" >
             <span>Thinking about the world</span>
             <h2>Our Products</h2>

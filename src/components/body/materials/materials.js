@@ -8,10 +8,10 @@ import Col from 'react-bootstrap/Col'
 export const Materials = (props) =>{
     
 return(
-    <div className="materialsWrapper" id="materials">
+    <div className="materialsWrapper" >
         {/* Text 1 */}
        
-        <Row className="textArea left" >
+        <Row className="textArea left" id="materials">
           <Col md="12" >
             <h2>Our Materials</h2>
             <p>Dedicated to eco-friendly, renewable sources.</p>

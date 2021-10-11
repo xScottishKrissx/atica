@@ -15,10 +15,10 @@ import liza from '../../../images/team/liza_conway.jpg'
 export const Team = (props) =>{
     
 return(
-    <div className="teamWrapper">
-        <Row className="up" >
+    <div className="teamWrapper ">
+        <Row >
           <Col>
-              <Row className="textArea left" id="guarantee">
+              <Row className="textArea " id="guarantee">
                 <Col md="12" >
                   <h2>Meet the team</h2>
                 </Col>

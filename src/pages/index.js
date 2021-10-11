@@ -38,7 +38,7 @@ const IndexPage = () => {
 
 useEffect(()=>{
 
-
+    console.log("Hook")
     const handleScroll = () => {
       const currentScrollY = window.scrollY;  
       if(currentScrollY < 200) document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')

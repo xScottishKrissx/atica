@@ -8,14 +8,14 @@ import Col from 'react-bootstrap/Col'
 export const Subscription = (props) =>{
     
 return(
-    <div className="subscriptionWrapper">
-          <Row className="textArea up" id="subscription">
+    <div className="subscriptionWrapper up">
+          <Row className="textArea" id="subscription">
           <Col md="12" >
             <h2>ATICA+</h2>
           </Col>
         </Row>
 
-        <Row md="8" className="card dual up">
+        <Row md="8" className="card dual">
           
           <Col md={6} lg={3}>
             <div id="aticaBronze">
@@ -75,13 +75,12 @@ return(
           </Col>
 
         </Row>
-          <Row className="textArea up" id="subscription">
+          <Row className="textArea" id="subscription">
           <Col md="12" >
             <p>Do you have more money than sense? Do you live in a castle? </p>
             <p>ATICA+ is the deal for you.</p>
             <p>Regardless of whether you need all of this, we'll send you a mountain of furniture every month, chosen from our entire product inventory, because why not. Life is short and you might get something rare and valuable.</p>
             <p>Probably not, but you might.</p>
-            <button>Call To Action</button>
           </Col>
         </Row>
 
