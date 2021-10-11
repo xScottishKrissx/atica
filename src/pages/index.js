@@ -121,7 +121,7 @@ useEffect(()=>{
     <>
 
       <CustomNavbar home={true}/>
-      {/* <Header description={siteInfo} /> */}
+      <Header description={siteInfo} />
       <Body />
       <Footer />
     </>
