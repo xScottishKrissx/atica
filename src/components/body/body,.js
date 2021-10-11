@@ -11,10 +11,13 @@ import Team from './team/team'
 import Subscription from './subscription/subscription';
 
 export const Body = (props) =>{
-    
+
+
+
+
 return(
     <Container fluid="sm" id="bodyContainer">
-        <Products  id="products" />
+        <Products  id="products"  />
         <Materials />
         <Locations />
         <Guarantee />
@@ -26,3 +29,4 @@ return(
 }
 
 export default Body;
+

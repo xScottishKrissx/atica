@@ -25,21 +25,29 @@ return(
           />
           ATICA
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
-            <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
-            <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
-            <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
 
-          </Nav>
-          
-          <Nav>
-            <Nav.Link id="navBarSubscriptionLink" href="#subscription">ATICA+</Nav.Link>
-          </Nav>
+        {props.home === true ? 
+          <>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
+                <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
+                <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
+                <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
+    
+              </Nav>
+              
+              <Nav>
+                <Nav.Link id="navBarSubscriptionLink" href="#subscription">ATICA+</Nav.Link>
+              </Nav>
+    
+            </Navbar.Collapse> 
+          </>
+        : 
+          null
+        }
 
-        </Navbar.Collapse>
         </Container>
       </Navbar>
     </Container>

@@ -2,29 +2,29 @@
 Atica:
   Goals:
     ✔ Practice animate on scroll effects @done(12:14 - 06/10/21)
-    ☐ Further practice with Gatsby + GraphiQL
-      ☐ Goal, use plugins wherever possible
+    ✔ Further practice with Gatsby + GraphiQL @done(16:14 - 11/10/21)
+      ✘ Goal, use plugins wherever possible @cancelled(16:14 - 11/10/21)
         // no more <img> , use <Gatsby Image> plugin
         // remember how to install plugins
 
-    ☐ Practice with react-bootstrap
-      ☐ Goal, only use react-bootstrap elements for things like buttons, navbar etc
+    ✔ Practice with react-bootstrap @done(16:14 - 11/10/21)
+      ✔ Goal, only use react-bootstrap elements for things like buttons, navbar etc @done(16:14 - 11/10/21)
         // custom styles are allowed, but <button> tags are not.
 
-    ☐ Practice with Sass
+    ✔ Practice with Sass @done(16:14 - 11/10/21)
 
     Update:
-      ☐ Ok, all of the above sounds great but I think im trying too much and getting a bit overwhelmed so new plan:
+      ✔ Ok, all of the above sounds great but I think im trying too much and getting a bit overwhelmed so new plan: @done(16:14 - 11/10/21)
         ✔ Get the design in place, with all of the trimmings @done(12:14 - 06/10/21)
         ✔ ...then attempt the scroll into view animations with everything in place. @done(12:14 - 06/10/21)
-        ☐ Keep pushing ahead with sass, it will be better in the long run even if there's some teething issues
-        ☐ Pull back on the bootstrap. It'l be good for general layout but the components annoy me
-        ☐ Continue ahead with plugins.
+        ✔ Keep pushing ahead with sass, it will be better in the long run even if there's some teething issues @done(16:14 - 11/10/21)
+        ✔ Pull back on the bootstrap. It'l be good for general layout but the components annoy me @done(16:14 - 11/10/21)
+        ✔ Continue ahead with plugins. @done(16:14 - 11/10/21)
 
 
-      ☐ Project Ideas
-        ☐ Furniture Store...with a giant butterfly at the top of the page for some reason...
-        ☐ ...this will work
+      ✔ Project Ideas @done(16:14 - 11/10/21)
+        ✔ Furniture Store...with a giant butterfly at the top of the page for some reason... @done(16:14 - 11/10/21)
+        ✔ ...this will work @done(16:14 - 11/10/21)
 
 
   To-Do:
@@ -39,19 +39,20 @@ Atica:
 General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
   ✔ I think it's time to split up the file into components. @done(17:49 - 07/10/21)
-      ☐ javascript is still a bit much though
-  ☐ There's a fair amount of stuttering for some of the animations, especially near the bottom
+      ✔ javascript is still a bit much though @done(16:14 - 11/10/21)
+  ✔ There's a fair amount of stuttering for some of the animations, especially near the bottom @done(16:14 - 11/10/21)
   
 Navbar:
-  ☐ Integrate the navbar with the intersectionObserver stuff
-    ☐ I've figured this out although my solution might need to be more optimised, there's a lot of lines for code that does the same thing
+  ✔ Integrate the navbar with the intersectionObserver stuff @done(16:14 - 11/10/21)
+    ✔ I've figured this out although my solution might need to be more optimised, there's a lot of lines for code that does the same thing @done(16:14 - 11/10/21)
     ✔ I have the on navbar links changing colour as you scroll down the page past the relevant section. @done(16:36 - 07/10/21)
-      ☐ I just need to properly style this change
+      ✔ I just need to properly style this change @done(16:14 - 11/10/21)
 
 Header:
   ✔ Add image @done(12:00 - 04/10/21)
   ✔ Add text @done(13:05 - 06/10/21)
     ✔ Style text @done(13:05 - 06/10/21)
+
   
 Body:
   Card Animation:
@@ -92,21 +93,21 @@ Body:
     ☐ I may have a  solution here but it's going to require a change to every component with a card. I might look into creating a dedicated card component here
 
 Team Section:
-  ☐ Add 6 cards
-    ☐ Include photos for each person
+  ✔ Add 6 cards @done(16:14 - 11/10/21)
+    ✔ Include photos for each person @done(16:14 - 11/10/21)
       ✔ Photos in place, names picked and positions applied @done(12:59 - 08/10/21)
         ✔ Style above... @done(16:37 - 08/10/21)
 Footer / Subscription Section:
   ✔ Style cards in footer @done(12:32 - 08/10/21)
 
 Footer:
-  ☐ Add a proper dedicated footer to the bottom of the page.
-    ☐ Include:
+  ✔ Add a proper dedicated footer to the bottom of the page. @done(16:14 - 11/10/21)
+    ✔ Include: @done(16:14 - 11/10/21)
       ✔ Logo @done(18:21 - 08/10/21)
       ✔ Atica @done(18:21 - 08/10/21)
-      ☐ Contact Info
-      ☐ Blurb
-    ☐ Footer in, but i would like the 2 columns to be right next to each other
+      ✘ Contact Info @cancelled(16:14 - 11/10/21)
+      ✘ Blurb @cancelled(16:14 - 11/10/21)
+    ✔ Footer in, but i would like the 2 columns to be right next to each other @done(16:14 - 11/10/21)
 
 
 

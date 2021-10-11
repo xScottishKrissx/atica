@@ -6,9 +6,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 export const Products = (props) =>{
-    
+
+
+// console.log(props.cardInfo)
 return(
     <div className="productsWrapper"  >
+      
 
         <Row className="textArea right" id="products">
           <Col md="12" >
@@ -17,18 +20,19 @@ return(
             <p>Sofa - Tables - Chairs - Ottomans </p>
           </Col>
         </Row>
-
+            
         <Row className="card right" >
           <Col md="12" >
 
-          <div className="innerCardWrap">
-              <span id="card-1"></span>
-              <div>
-                <h3>Vegan</h3>
-                <p>All of our products are 100% vegan</p>
-              </div>
-            </div>
+           
+              <div className="innerCardWrap">
 
+                  <span id="card-1"></span>
+                  <div>
+                    <h3>Sofas</h3>
+                  </div>
+                </div>
+            
           </Col>
         </Row>
 
@@ -38,8 +42,7 @@ return(
             <div className="innerCardWrap">
                 <span id="card-2"></span>
                 <div>
-                  <h3>Vegan</h3>
-                  <p>All of our products are 100% vegan</p>
+                  <h3>Chairs</h3>
                 </div>
               </div>
             </Col>
@@ -48,8 +51,7 @@ return(
             <div className="innerCardWrap">
               <span id="card-3"></span>
               <div>
-                <h3>Vegan</h3>
-                <p>All of our products are 100% vegan</p>
+                <h3>Tables</h3>
               </div>
             </div>
             </Col>
@@ -61,8 +63,7 @@ return(
             <div className="innerCardWrap">
               <span id="card-4"></span>
               <div>
-                <h3>Vegan</h3>
-                <p>All of our products are 100% vegan</p>
+                <h3>Ottomans</h3>
               </div>
             </div>
           </Col>

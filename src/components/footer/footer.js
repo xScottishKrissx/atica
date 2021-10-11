@@ -15,7 +15,7 @@ return(
     <Container className="footerWrapper" fluid>
         <Row className="innerFooterWrapper">
             <Col sm={12} lg={6}>
-                <img src={header} />
+                <img src={header} alt="" />
             </Col>
             
             <Col sm={12} lg={6}>

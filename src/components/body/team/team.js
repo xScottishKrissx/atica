@@ -15,10 +15,10 @@ import liza from '../../../images/team/liza_conway.jpg'
 export const Team = (props) =>{
     
 return(
-    <div className="teamWrapper ">
-        <Row >
+    <div className="teamWrapper">
+        <Row className="up">
           <Col>
-              <Row className="textArea " id="guarantee">
+              <Row className="textArea " id="guarantee" >
                 <Col md="12" >
                   <h2>Meet the team</h2>
                 </Col>
@@ -27,7 +27,7 @@ return(
 
               <Col md={4}>
                 <div>
-                  <img src={atticus} />
+                  <img src={atticus} alt="" />
                   <h3>Atticus Pavlis</h3>
                   <span>CEO</span>
                 </div>
@@ -35,7 +35,7 @@ return(
 
               <Col md={4}>
                 <div>
-                  <img src={nicholas} />
+                  <img src={nicholas} alt="" />
                   <h3>Nicholas Pavlis</h3>
                   <span>CFO</span>
                 </div>
@@ -43,7 +43,7 @@ return(
 
               <Col md={4}>
                 <div>
-                  <img src={gavin} />
+                  <img src={gavin} alt="" />
                   <h3>Gavin Gray</h3>
                   <span>Design</span>
                 </div>
@@ -53,7 +53,7 @@ return(
               
               <Col md={4}>
                 <div>
-                  <img src={james} />
+                  <img src={james} alt="" />
                   <h3>James McCann</h3>
                   <span>Sales</span>
                 </div>
@@ -61,7 +61,7 @@ return(
 
               <Col md={4}>
                 <div>
-                  <img src={silva} />
+                  <img src={silva} alt="" />
                   <h3>Silva Antonio</h3>
                   <span>Digital</span>
                 </div>
@@ -69,7 +69,7 @@ return(
 
               <Col md={4}>
                 <div>
-                  <img src={liza} />
+                  <img src={liza} alt="" />
                   <h3>Liza Conway</h3>
                   <span>Marketing</span>
                 </div>

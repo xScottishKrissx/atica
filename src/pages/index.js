@@ -1,5 +1,8 @@
 import * as React from "react"
 import {useEffect } from "react";
+
+import { graphql } from "gatsby";
+
 import './index.sass';
 
 
@@ -9,36 +12,13 @@ import Body from "../components/body/body,";
 import Footer from "../components/footer/footer";
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({data}) => {
 
-
-// function mouseHover(id,action){
-//   // console.log(id + " : " + action)
-//   if(typeof document !== 'undefined'){
-//     if(action === "out")  {
-//       setTimeout(function(){ 
-//       document.getElementById(id).classList.remove('in')
-//       document.getElementById(id).classList.add('out')
-//       }, 1000);
-//       // document.getElementById(id).classList.remove('in')
-//       // document.getElementById(id).classList.add('out')
-//     }
-//     if(action === "in") {
-      
-//       document.getElementById(id).classList.remove('out')
-//       document.getElementById(id).classList.add('in')
-
-//     }
-//   }
-
- 
-// }
-
-  // const prevScrollY = useRef(0);
+const siteInfo = data.site.siteMetadata.description
 
 useEffect(()=>{
 
-    console.log("Hook")
+    // console.log("Hook")
     const handleScroll = () => {
       const currentScrollY = window.scrollY;  
       if(currentScrollY < 200) document.getElementById("navBarProductsLink").classList.remove('navChangeTemp')
@@ -133,8 +113,8 @@ useEffect(()=>{
 
     <>
 
-      <CustomNavbar />
-      <Header />
+      <CustomNavbar home={true}/>
+      <Header description={siteInfo} />
       <Body />
       <Footer />
     </>
@@ -143,3 +123,24 @@ useEffect(()=>{
 }
 
 export default IndexPage
+
+export const query = graphql`
+    query HomePageQuery {
+      site {
+        siteMetadata {
+          description
+        }
+      }
+      allMdx {
+          nodes {
+              frontmatter {
+                  title,
+                  description,
+                  category,
+              },
+              id,
+              body
+          }
+      }
+    }
+  `
