@@ -41,7 +41,8 @@ General:
   ✔ I think it's time to split up the file into components. @done(17:49 - 07/10/21)
       ✔ javascript is still a bit much though @done(16:14 - 11/10/21)
   ☐ There's a fair amount of stuttering for some of the animations, especially near the bottom
-    ☐ The main barrier to fixing this is that localhost and cloud deployed versions behave differently on load so i can only test this when deployed. not great.
+    ✔ The main barrier to fixing this is that localhost and cloud deployed versions behave differently on load so i can only test this when deployed. not great. @done(16:33 - 11/10/21)
+    ☐ I may have a fix that involves just skipping the stuttering start by hiding it behind a fade in.
   
 Navbar:
   ✔ Integrate the navbar with the intersectionObserver stuff @done(16:14 - 11/10/21)
