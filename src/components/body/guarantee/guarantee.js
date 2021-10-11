@@ -8,16 +8,16 @@ import Col from 'react-bootstrap/Col'
 export const Guarantee = (props) =>{
     
 return(
-    <div className="guaranteeWrapper" >
+    <div className="guaranteeWrapper up" >
         {/* Text Section 4 */}
-        <Row className="textArea left" id="guarantee" >
+        <Row className="textArea" id="guarantee" >
           <Col md="12" >
             <h2>Atica Guarantee</h2>
           </Col>
         </Row>
 
 {/* Card Section 4 */}
-        <Row md="8" className="card dual left" >
+        <Row md="8" className="card dual" >
           <Col md={6}>
             <div className="innerCardWrap">
               <span id="card-12"></span>

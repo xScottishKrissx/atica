@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col'
 export const Materials = (props) =>{
     
 return(
-    <div className="materialsWrapper" >
+    <div className="materialsWrapper up" >
         {/* Text 1 */}
        
         <Row className="textArea left" id="materials">
@@ -19,7 +19,7 @@ return(
         </Row>
 
 {/* Card Section 2 */}    
-        <Row className="card left" >
+        <Row className="card" >
           <Col md="12" >
 
           <div className="innerCardWrap">
@@ -33,7 +33,7 @@ return(
           </Col>
         </Row>
 
-        <Row md="8" className="card dual left">
+        <Row md="8" className="card dual">
           <Col md={6}>
           <div className="innerCardWrap">
               <span id="card-6"></span>
@@ -56,7 +56,7 @@ return(
 
         </Row>
 
-        <Row className="card left">
+        <Row className="card">
             <Col md="12" >
             <div className="innerCardWrap">
               <span id="card-8"></span>

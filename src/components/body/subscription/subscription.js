@@ -15,7 +15,7 @@ return(
           </Col>
         </Row>
 
-        <Row md="8" className="card dual up">
+        <Row md="8" className="card dual">
           
           <Col md={6} lg={3}>
             <div id="aticaBronze">
@@ -75,7 +75,7 @@ return(
           </Col>
 
         </Row>
-          <Row className="textArea up" id="subscription">
+          <Row className="textArea" id="subscription">
           <Col md="12" >
             <p>Do you have more money than sense? Do you live in a castle? </p>
             <p>ATICA+ is the deal for you.</p>

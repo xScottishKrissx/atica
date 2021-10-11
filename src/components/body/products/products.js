@@ -36,7 +36,7 @@ return(
           </Col>
         </Row>
 
-        <Row md="8" className="card dual right">
+        <Row md="8" className="card dual">
 
             <Col md={6}>
             <div className="innerCardWrap">
@@ -58,7 +58,7 @@ return(
 
         </Row>
 
-        <Row className="card right">
+        <Row className="card">
             <Col md="12" >
             <div className="innerCardWrap">
               <span id="card-4"></span>

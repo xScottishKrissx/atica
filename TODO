@@ -53,6 +53,7 @@ General:
           ☐ portfolio
           ☐ mobile
         ☐ So yeah, let's rip it out and go again.
+          ☐ v2.1 is looking good across all of the above 4.
   
 Navbar:
   ✔ Integrate the navbar with the intersectionObserver stuff @done(16:14 - 11/10/21)
