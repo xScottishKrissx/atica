@@ -40,22 +40,22 @@ General:
   ✔ Resize images, they're hilariously too big. The butterfly is 14MB. @done(17:27 - 05/10/21)
   ✔ I think it's time to split up the file into components. @done(17:49 - 07/10/21)
       ✔ javascript is still a bit much though @done(16:14 - 11/10/21)
-  ☐ There's a fair amount of stuttering for some of the animations, especially near the bottom
+  ✔ There's a fair amount of stuttering for some of the animations, especially near the bottom @done(11:55 - 12/10/21)
     ✔ The main barrier to fixing this is that localhost and cloud deployed versions behave differently on load so i can only test this when deployed. not great. @done(16:33 - 11/10/21)
     ✔ I may have a fix that involves just skipping the stuttering start by hiding it behind a fade in. @done(16:35 - 11/10/21)
       ✔ This worked but the our products was stuttery the very first time i loaded the page. Haven't been able to replicate this so it might just be a cache issue. @done(16:36 - 11/10/21)
-      ☐ Now i've uploaded it to the portfolio and thats also behaving differently....help.
-      ☐ There is something very wrong with my animations
-        ☐ On mobile they are VERY stuttery.
-        ☐ I think i am going to start again...again. This time start small and find something that works across
-          ☐ local host
-          ☐ cloud
-          ☐ portfolio
-          ☐ mobile
-        ☐ So yeah, let's rip it out and go again.
-          ☐ v2.1 is looking good across all of the above 4.
-            ☐ This is the way to go, it's working across all areas, so let's get to work changing things up.
-            ☐ When this is done and all platforms are looking good then this project is finished.
+      ✔ Now i've uploaded it to the portfolio and thats also behaving differently....help. @done(11:55 - 12/10/21)
+      ✔ There is something very wrong with my animations @done(11:55 - 12/10/21)
+        ✔ On mobile they are VERY stuttery. @done(11:55 - 12/10/21)
+        ✔ I think i am going to start again...again. This time start small and find something that works across @done(12:06 - 12/10/21)
+          ✔ local host @done(11:56 - 12/10/21)
+          ✔ cloud @done(11:56 - 12/10/21)
+          ✔ portfolio @done(12:06 - 12/10/21)
+          ✔ mobile @done(12:06 - 12/10/21)
+        ✔ So yeah, let's rip it out and go again. @done(11:55 - 12/10/21)
+          ✔ v2.1 is looking good across all of the above 4. @done(11:55 - 12/10/21)
+            ✔ This is the way to go, it's working across all areas, so let's get to work changing things up. @done(11:55 - 12/10/21)
+            ✔ When this is done and all platforms are looking good then this project is finished. @done(11:55 - 12/10/21)
 
 Mobile Issues:
   ✔ Some of the cards have a border radius @done(11:36 - 12/10/21)
@@ -77,17 +77,17 @@ Header:
   
 Body:
   Card Animation:
-    ☐ This is tougher than I thought it would be. Getting the scale is easy enough, getting the smooth in and out animation of the scale is a different thing and requires javascript.
-      ☐ ok im getting bogged down here. I dont have a satisfactory solution for this and im spending too much time figuring it out.
+    ✔ This is tougher than I thought it would be. Getting the scale is easy enough, getting the smooth in and out animation of the scale is a different thing and requires javascript. @done(11:55 - 12/10/21)
+      ✔ ok im getting bogged down here. I dont have a satisfactory solution for this and im spending too much time figuring it out. @done(11:55 - 12/10/21)
         ✔ get the look of the design in place before working on the details. @done(18:06 - 04/10/21)
-        ☐ Structure in place, work on the scroll into view animation
+        ✔ Structure in place, work on the scroll into view animation @done(11:55 - 12/10/21)
           ✔ I have a version of the intersection callback working... 
           @done(12:47 - 05/10/21)
           ✔ ...but i still need to figure out how to target specific divs instead of all h2 tags @done(12:49 - 05/10/21)
             ✔ ok it wasn't hard at all, i was obviously doing some wrong previously. You just put a class name into the query selector and it works fine @done(12:49 - 05/10/21)
           ✔ I have elements on the page fading into view as you scroll down the page. Cool @done(14:01 - 05/10/21)
           ✔ I have some animations that i am happy with. There's a bit of jumpiness but i'm not sure if that's to do with it being in development mode @done(17:28 - 05/10/21)
-          ☐ the header and body rows need to be differentiated
+          ✘ the header and body rows need to be differentiated @cancelled(11:55 - 12/10/21)
             header - start with 1 opacity
             row - start with 0, then fade in
               maybe remove all opacity and try again
@@ -111,7 +111,7 @@ Body:
         ✔ Woo, to-do is working again @done(15:20 - 07/10/21)
         ✔ Note :: import sass in css, it will break the website when attempting to deploy to server. @done(16:34 - 07/10/21)
         ✔ 7/10/2021 - The make or break day for this project. A lot of issues to be fixed but i got through it. Tommorow i will crack on with more styling to get everything as I want it, then I will look into GraphiQL and start making some pages. @done(18:11 - 07/10/21)
-    ☐ I may have a  solution here but it's going to require a change to every component with a card. I might look into creating a dedicated card component here
+    ✘ I may have a  solution here but it's going to require a change to every component with a card. I might look into creating a dedicated card component here @cancelled(11:55 - 12/10/21)
 
 Team Section:
   ✔ Add 6 cards @done(16:14 - 11/10/21)

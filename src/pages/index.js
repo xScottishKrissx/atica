@@ -5,13 +5,11 @@ import { graphql } from "gatsby";
 
 import './index.sass';
 
-
 import CustomNavbar from "../components/navbar/customNavbar";
 import Header from "../components/body/header/header";
 import Body from "../components/body/body,";
 import Footer from "../components/footer/footer";
 
-// markup
 const IndexPage = ({data}) => {
 
 const siteInfo = data.site.siteMetadata.description
@@ -25,10 +23,6 @@ useEffect(()=>{
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-
-    
-
-
 
     function intersectionCallback(entries) {
       entries.forEach(function(entry) {
@@ -52,7 +46,6 @@ useEffect(()=>{
   
           
           if(targetId.includes("products")){
-            console.log("Products")
             // document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
             document.getElementById("navBarProductsLink").classList.add('navChangeTemp') 
             document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp')
@@ -111,22 +104,13 @@ useEffect(()=>{
     return () => window.removeEventListener("scroll", handleScroll);
 }, [])
 
-
-
-
-
-
-
   return (
-
     <>
-
       <CustomNavbar home={true}/>
       <Header description={siteInfo} />
       <Body />
       <Footer />
     </>
-
   )
 }
 

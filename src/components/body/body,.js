@@ -17,7 +17,7 @@ export const Body = (props) =>{
 
 return(
     <Container fluid="sm" id="bodyContainer">
-        <Products  id="products"  />
+        <Products  />
         <Materials />
         <Locations />
         <Guarantee />
