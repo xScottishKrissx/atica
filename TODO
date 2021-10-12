@@ -54,6 +54,14 @@ General:
           ☐ mobile
         ☐ So yeah, let's rip it out and go again.
           ☐ v2.1 is looking good across all of the above 4.
+            ☐ This is the way to go, it's working across all areas, so let's get to work changing things up.
+            ☐ When this is done and all platforms are looking good then this project is finished.
+
+Mobile Issues:
+  ✔ Some of the cards have a border radius @done(11:36 - 12/10/21)
+  ✔ In locations, the glasgow and ayr cards have no space between the, @done(11:36 - 12/10/21)
+  ✘ The gap between sections is a little too big, maybe lower this by 50px @cancelled(11:36 - 12/10/21)
+  ✔ the navbar takes up a lot of the page height, maybe reduce this by half. @done(11:36 - 12/10/21)
   
 Navbar:
   ✔ Integrate the navbar with the intersectionObserver stuff @done(16:14 - 11/10/21)

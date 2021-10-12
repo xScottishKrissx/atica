@@ -11,6 +11,7 @@ import header from '../../../images/butterfly.png'
 export const Header = (props) =>{
 return(
     <Container fluid className="header" id="top">
+    <div className="navBarAnchor" id="topAnchor"></div>
       <Row className="text">
         <Col>
           <img alt="" src={header}></img>

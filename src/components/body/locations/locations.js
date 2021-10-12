@@ -9,6 +9,7 @@ export const Locations = (props) =>{
     
 return(
 <div className="locationsWrapper up" >
+  <div className="navBarAnchor" id="locationsAnchor"></div>
           <Row className="textArea" id="locations">
           <Col md="12" >
             <h2>Our Locations</h2>

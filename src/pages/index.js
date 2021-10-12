@@ -52,7 +52,8 @@ useEffect(()=>{
   
           
           if(targetId.includes("products")){
-            document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
+            console.log("Products")
+            // document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp') 
             document.getElementById("navBarProductsLink").classList.add('navChangeTemp') 
             document.getElementById("navBarMaterialsLink").classList.remove('navChangeTemp')
           }

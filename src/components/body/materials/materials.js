@@ -10,6 +10,7 @@ export const Materials = (props) =>{
 return(
     <div className="materialsWrapper up" >
         {/* Text 1 */}
+        <div className="navBarAnchor" id="materialsAnchor"></div>
        
         <Row className="textArea left" id="materials">
           <Col md="12" >

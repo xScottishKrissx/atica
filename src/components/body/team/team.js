@@ -16,6 +16,7 @@ export const Team = (props) =>{
     
 return(
     <div className="teamWrapper up" >
+    <div className="navBarAnchor" id="teamAnchor"></div>
         <Row id="team">
           <Col>
               <Row className="textArea " >

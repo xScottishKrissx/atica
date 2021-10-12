@@ -9,6 +9,7 @@ export const Subscription = (props) =>{
     
 return(
     <div className="subscriptionWrapper up">
+    <div className="navBarAnchor" id="subscriptionAnchor"></div>
           <Row className="textArea" id="subscription">
           <Col md="12" >
             <h2>ATICA+</h2>

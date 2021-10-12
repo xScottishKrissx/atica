@@ -9,6 +9,7 @@ export const Guarantee = (props) =>{
     
 return(
     <div className="guaranteeWrapper up" >
+    <div className="navBarAnchor" id="guaranteeAnchor"></div>
         {/* Text Section 4 */}
         <Row className="textArea" id="guarantee" >
           <Col md="12" >

@@ -11,7 +11,7 @@ export const Products = (props) =>{
 // console.log(props.cardInfo)
 return(
     <div className="productsWrapper up"  >
-      
+       <div className="navBarAnchor" id="productsAnchor"></div>
 
         <Row className="textArea right" id="products">
           <Col md="12" >

@@ -11,48 +11,53 @@ import header from '../../images/butterfly.png'
 
 export const CustomNavbar = (props) =>{
     
-return(
-    <Container fluid className=" navbarWrapper">
-      <Navbar fixed="top" collapseOnSelect expand="lg ">
-        <Container>
-        <Navbar.Brand href="#top">
-          <img
-            src={header}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="atica website logo"
-          />
-          ATICA
-        </Navbar.Brand>
+  function customScrollTo(id){
+      let element = document.getElementById(id)
+      element.scrollIntoView({behavior: 'smooth', block: 'start'})
+    }
 
-        {props.home === true ? 
-          <>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link id="navBarProductsLink" href="#products">Our Products</Nav.Link>
-                <Nav.Link id="navBarMaterialsLink" href="#materials">Our Materials</Nav.Link>
-                <Nav.Link id="navBarLocationsLink" href="#locations">Our Locations</Nav.Link>
-                <Nav.Link id="navBarGuaranteeLink" href="#guarantee">Our Guarantee</Nav.Link>
-                <Nav.Link id="navBarTeamLink" href="#team">Our Team</Nav.Link>
-    
-              </Nav>
-              
-              <Nav>
-                <Nav.Link id="navBarSubscriptionLink" href="#subscription">ATICA+</Nav.Link>
-              </Nav>
-    
-            </Navbar.Collapse> 
-          </>
-        : 
-          null
-        }
+  return(
+      <Container fluid className=" navbarWrapper">
+        <Navbar fixed="top" collapseOnSelect expand="lg ">
+          <Container>
+          <Navbar.Brand onClick={()=>customScrollTo("topAnchor")} >
+            <img
+              src={header}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="atica website logo"
+            />
+            ATICA
+          </Navbar.Brand>
 
-        </Container>
-      </Navbar>
-    </Container>
-)
+          {props.home === true ? 
+            <>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link onClick={()=>customScrollTo("productsAnchor")} id="navBarProductsLink">Our Products</Nav.Link>
+                  <Nav.Link onClick={()=>customScrollTo("materialsAnchor")} id="navBarMaterialsLink">Our Materials</Nav.Link>
+                  <Nav.Link onClick={()=>customScrollTo("locationsAnchor")} id="navBarLocationsLink">Our Locations</Nav.Link>
+                  <Nav.Link onClick={()=>customScrollTo("guaranteeAnchor")} id="navBarGuaranteeLink">Our Guarantee</Nav.Link>
+                  <Nav.Link onClick={()=>customScrollTo("teamAnchor")} id="navBarTeamLink">Our Team</Nav.Link>
+      
+                </Nav>
+                
+                <Nav>
+                  <Nav.Link onClick={()=>customScrollTo("subscriptionAnchor")} id="navBarSubscriptionLink">ATICA+</Nav.Link>
+                </Nav>
+      
+              </Navbar.Collapse> 
+            </>
+          : 
+            null
+          }
+
+          </Container>
+        </Navbar>
+      </Container>
+  )
 
 }
 
